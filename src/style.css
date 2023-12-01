@@ -1,0 +1,100 @@
+/* Base Stuff*/
+:root {
+  --bgCol: #161b40;
+  --primaryCol: #F40058;
+  --secondaryCol: #34E4EA;
+  --fontPrimary: "serif"
+}
+
+/* Text */
+.text-header-big {
+  font-size: 40px;
+  color: white;
+  font-family: var(--fontPrimary);
+}
+.text-subtitle {
+  font-size: 25px;
+  color: white;
+  font-family: var(--fontPrimary);
+}
+
+/* Homepage */
+.home-format {
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  margin-top: 10%;
+}
+.home-picture {
+  max-width: 100%;
+}
+.home-button {
+  display: block;
+  margin: auto;
+  background-color: var(--primaryCol);
+  color: white;
+  font-weight: bold;
+  border: 5px solid transparent;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width:15rem;
+}
+.home-button-top {
+  background-color: var(--primaryCol);
+  color: white;
+  font-family: var(--fontPrimary);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.home-button:hover{
+  background-color: transparent !important;
+  border: 5px solid white;
+  transition: 600ms !important;
+}
+
+/* Engineer Page */
+.engineer-format {
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  margin-top: 10%;
+}
+.engineer-card-body {
+  background-color: transparent !important;
+}
+
+
+.App-background {
+  background-color: var(--bgCol);
+  height: 100vh;
+  }
+
+  
+.debug {
+  outline: 1px solid red;
+  color: red;
+}
+
+/* Nav Bar */
+.navElement {
+  color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  white-space: nowrap;
+}
+.navElement:hover {
+  color: var(--primaryCol);
+  transition: 300ms;
+}
+
+.test {
+  font-size: 40px;
+  color: white;
+}
+
