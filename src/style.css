@@ -2,8 +2,8 @@
 
 /* Base Stuff*/
 :root {
-  --primaryCol: #175676;
-  --secondaryCol: #97F9F9;
+  --primaryCol: #141414;
+  --secondaryCol: #2DC7FF;
   --textCol: white;
   --fontPrimary: 'Poppins', sans-serif;
 }
@@ -25,7 +25,7 @@ li::marker {
 }
 .text-header-big {
   font-size: 2.5rem;
-  color: white;
+  color: black;
   font-family: var(--fontPrimary);
 }
 .text-subtitle {
@@ -100,10 +100,10 @@ li::marker {
 
 .App-background {
   background-color: var(--primaryCol);
-  height: 100vh;
+  min-height: 100vh;
   }
 
-/* Individual Project Pagw */
+/* Individual Project Page */
 .project-format {
   margin-top: 30px;
 }
@@ -115,12 +115,12 @@ li::marker {
 }
 .project-subheader {
   text-align: center;
+  margin-top: 30px;
 }
 .project-info {
   font-size: 1.5rem;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
-  padding-top: 10px;
   display: inline;
 }
 .project-subtitle {
@@ -137,11 +137,21 @@ li::marker {
   margin-top: 5px;
 }
 .project-pill{
-  border: 3px solid;
+  /* border: 3px solid;
   border-radius: 20px;
   border-color: var(--secondaryCol);
-  padding: 10px;
-  margin-top: 15px;
+  padding: 10px; */
+  padding-top: 20px;
+  padding-bottom: 2px;
+  max-width: 50rem;
+  width:auto;
+  
+}
+.project-picture {
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

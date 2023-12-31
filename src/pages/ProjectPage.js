@@ -1,26 +1,28 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import arm_1 from '../assets/arm_1.png'
+import Image from 'react-bootstrap/Image';
+
+import arm_2 from '../assets/arm_2.png'
+import arm_3 from '../assets/arm_3.png'
+import arm_4 from '../assets/arm_4.png'
 
 function ProjectPage() {
     return(
-        <Container className='project-format'>
+        <Container className='project-format debug'>
             <Row>
                 <div className='project-title'>
                     Designing a Fully Anthropomorphic Robotic Hand
                 </div>
             </Row>
-            <Row>
-            <Row>
+            <Row style={{marginTop:"10px"}}>
                 <div className='project-subheader'>
                     <div className='project-info'>Oct-May 2020</div>
                     <div className='project-info'>   •   </div>
                     <div className='project-info'>Princeton, NJ</div>
                 </div>
             </Row>
-            </Row>
-            <Row className='project-pill'>
+            <Row className='project-pill debug'>
                 <Col>
                     <div>
                         <div className='project-subtitle'>
@@ -63,6 +65,17 @@ function ProjectPage() {
                         </ul>
                     </div>
                 </Col>
+            </Row>
+            <Row>
+                <Image className="project-picture" src={arm_2} />
+            </Row>
+            <Row>
+                <div style={{float:"left"}}>
+                    <Image className="project-picture" src={arm_3} />
+                </div>
+                <div style={{float:"left"}}>
+                    <Image className="project-picture" src={arm_4} />
+                </div>
             </Row>
         </Container>
     );
