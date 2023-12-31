@@ -4,24 +4,27 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
 
-import portrait_transparent from '../assets/portrait_transparent.png'
+import portrait_transparent from '../assets/headshot.png'
 
 function HomePage() {
     return(
         <div className='debug home-format'>
             <Row>
                 <Col className='debug'>
-                    <div className='text-header-big'> Hi, I'm Justice</div>
+                    <div className='text-header-big'> Hi,</div>
+                    <div className='text-header-jumbo'>I'm Justice</div>
                     <div className='text-subtitle'>
-                        Check out some of my projects
+                        An engineer based in San Francisco.
                     </div>
-                    <button className='home-button'>Engineering Portfolio</button>
-                    <button className='home-button'>Modelling Portfolio</button>
-                    <button className='home-button'>Let's get in Touch</button>
+                    <div className='text-subtitle'>
+                        I dabble in robotics, software, and hardware.
+                    </div>
+
+                        <Button className='home-button'>Check out my Stuff</Button>
+
                 </Col>
-                <Col className='debug'>
-                    test
-                    <Image className="home-picture" src={portrait_transparent} roundedCircle/>
+                <Col className='debug test'>
+                    <Image className="home-picture" src={portrait_transparent} />
                 </Col>
             </Row>
         </div>

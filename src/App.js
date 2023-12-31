@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from './pages/HomePage.js'
 import EngineeringPage from './pages/EngineeringPage.js'
+import ProjectPage from './pages/ProjectPage.js'
 
 function App() {
   return (
@@ -16,10 +17,9 @@ function App() {
         <TopNavbar/>
         <BrowserRouter>
           <Routes>
-            <Route>
               <Route path="/" element={<HomePage />} />
               <Route path="engineering" element={<EngineeringPage />} />
-            </Route>
+              <Route path="project" element={<ProjectPage />} />
           </Routes>
         </BrowserRouter>
     </div>

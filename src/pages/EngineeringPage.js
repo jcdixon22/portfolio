@@ -7,39 +7,42 @@ import mock from '../assets/mock.jpg'
 
 function EngineeringPage() {
     return(
-        <div className='debug engineer-format'>
-                <Row xs={1} lg={2}>
-                    <Col>
-                        <Card className='engineer-card'>
-                            <Card.Img variant="bottom" src={mock} />
-                            <Card.Body className='engineer-card-body'>
-                                <Card.Text>Biomimetic Mimimetic</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <br />
-                <Row xs={1} lg={2}>
-                    <Col>
-                        <Card className='engineer-card'>
-                            <Card.Img variant="bottom" src={mock} />
-                            <Card.Body>
-                                <Card.Title>Biomimetic Mimimetic</Card.Title>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <br />
-                <Row xs={1} lg={2}>
-                    <Col>
-                    <Card className='engineer-card'>
-                        <Card.Img variant="bottom" src={mock} />
-                        <Card.Body>
-                            <Card.Title>Biomimetic Mimimetic</Card.Title>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-                </Row>
+        <div className='projects-format debug'>
+            <a href="/project">test</a>
+            <div className='projects-title'> Check out my work</div>
+            <Row xs={1} md={2} lg={3} className='projects-row'>
+                <Card className='projects-card'>
+                    <Card.Img variant="top" src={mock} />
+                    <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                        Developing a Responsive Website for a Non-Profit DEI Organization
+                    </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card  className='projects-card'>
+                    <Card.Img variant="top" src={mock} />
+                    <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </Card.Text>
+                    </Card.Body>
+                </Card>
+                <Card className='projects-card'>
+                    <Card.Img variant="top" src={mock} />
+                    <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Row>
         </div>
     );
 }
