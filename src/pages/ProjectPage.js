@@ -3,16 +3,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-import arm_2 from '../assets/arm_2.png'
-import arm_3 from '../assets/arm_3.png'
-import arm_4 from '../assets/arm_4.png'
+import arm_2 from '../assets/arm_2.png';
+import arm_3 from '../assets/arm_3.png';
+import arm_4 from '../assets/arm_4.png';
+
 
 function ProjectPage() {
+
     return(
-        <Container className='project-format debug'>
+        <Container className='project-format'>
             <Row>
                 <div className='project-title'>
-                    Designing a Fully Anthropomorphic Robotic Hand
+                Designing a Full Anthropromorphic Robotic Hand
                 </div>
             </Row>
             <Row style={{marginTop:"10px"}}>
@@ -22,60 +24,56 @@ function ProjectPage() {
                     <div className='project-info'>Princeton, NJ</div>
                 </div>
             </Row>
-            <Row className='project-pill debug'>
-                <Col>
-                    <div>
-                        <div className='project-subtitle'>
-                            Objectives
+            <Row className='project-pill mx-auto'>
+                    <Col>
+                        <div>
+                            <div className='project-subtitle'>
+                                Objectives
+                            </div>
+                            <ul className='project-text'>
+                                <li>
+                                    Design a hand that replicates the ranges of motion of a real hand using ten motors.
+                                </li>
+                                <li>
+                                    Map the natural DOF of the human hand to determine which DOFs are interdependent.
+                                </li>
+                                <li>
+                                    Construct the hand and perform strength, speed, and reliability testing.
+                                </li>
+                            </ul>
                         </div>
-                        <ul className='project-text'>
-                            <li>
-                                Design a hand that replicates the ranges of motion of a real hand using ten motors.
-                            </li>
-                            <li>
-                                Map the natural DOF of the human hand to determine which DOFs are interdependent
-                            </li>
-                            <li>
-                                Construct the hand and perform strength, speed, and reliability testing.
-                            </li>
-                        </ul>
-                    </div>
-                </Col>
-                <Col>
-                    <div>
-                        <div className='project-subtitle'>
-                            Key Skills
+                    </Col>
+                    <Col>
+                        <div>
+                            <div className='project-subtitle'>
+                                Key Skills
+                            </div>
+                            <ul className='project-text'>
+                                <li>
+                                    MATLAB
+                                </li>
+                                <li>
+                                    SolidWorks
+                                </li>
+                                <li>
+                                    Arduino/C
+                                </li>
+                                <li>
+                                    EAGLE
+                                </li>
+                                <li>
+                                    3D Printing
+                                </li>
+                            </ul>
                         </div>
-                        <ul className='project-text'>
-                            <li>
-                                MATLAB
-                            </li>
-                            <li>
-                                SolidWorks
-                            </li>
-                            <li>
-                                Arduino/C
-                            </li>
-                            <li>
-                                EAGLE
-                            </li>
-                            <li>
-                                3D Printing
-                            </li>
-                        </ul>
-                    </div>
-                </Col>
+                    </Col>
             </Row>
-            <Row>
+            <Row className='project-image-row mx-auto debug'>
                 <Image className="project-picture" src={arm_2} />
             </Row>
-            <Row>
-                <div style={{float:"left"}}>
-                    <Image className="project-picture" src={arm_3} />
-                </div>
-                <div style={{float:"left"}}>
-                    <Image className="project-picture" src={arm_4} />
-                </div>
+            <Row className='project-image-row mx-auto debug'>
+                <img className="project-picture" src={arm_3} />
+                <img className="project-picture" src={arm_4} />
             </Row>
         </Container>
     );

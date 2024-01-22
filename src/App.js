@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage.js'
 import EngineeringPage from './pages/EngineeringPage.js'
 import ProjectPage from './pages/ProjectPage.js'
+import Scratch from './pages/Scratch.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="engineering" element={<EngineeringPage />} />
               <Route path="project" element={<ProjectPage />} />
+              <Route path="scratch" element={<Scratch />} />
           </Routes>
         </BrowserRouter>
     </div>

@@ -4,17 +4,36 @@
 :root {
   --primaryCol: #141414;
   --secondaryCol: #2DC7FF;
-  --textCol: white;
+  --textCol1: white;
+  --textCol2: #D3D3D3;
   --fontPrimary: 'Poppins', sans-serif;
 }
 .debug {
   outline: 1px solid red;
   color: red;
 }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 li::marker {
-  content: '➥ ';
+  content: '- ';
   font-size: 1.2em;
 }
+.App-background {
+  background-color: var(--primaryCol);
+  min-height: 100vh;
+  }
 
 /* Text */
 .text-header-jumbo {
@@ -44,7 +63,7 @@ li::marker {
   margin-top: 5%;
 }
 .home-picture {
-  max-width: 80%;
+  width: 10rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -71,37 +90,80 @@ li::marker {
   text-align: center;
 }
 
-/* Projects Page */
-.projects-format {
+/* Engineering Page */
+.engineering-format {
   margin: auto;
-  width: 90%;
+  margin-left: 2rem;
+  margin-right: 2rem;
   justify-content: center;
   text-align: center;
   margin-top: 5%;
 }
-.projects-entry {
-  box-sizing: border-box;
-  width: calc(33.33% - 20px);
-  margin: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
+.engineering-row {
+  justify-content: center;
+}
+.engineering-entry {
+  max-width: 30rem !important;
+  background-color: rgba(255,255,255, 0.04);
+  border-radius: 20px;
+  padding: 0 !important;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.engineering-entry:hover {
+  background-color: rgba(107,107,107, 0.5);
+  transition: 300ms;
+}
+.engineering-entry-content {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.engineering-image {
+  max-width: 100%;
+  max-height: 20rem;
+  border-radius: 20px;
+}
+.engineering-title {
+  margin-top: 10px;
+  font-size: 1.7rem;
   text-align: center;
+  color: var(--textCol1);
 }
-.projects-title {
-  font-size: 6vw;
+.engineering-line {
+  margin: 0.5em auto;
+  width: 90%;
+  color: white;
+}
+.engineering-goals {
+  font-size: 1rem;
+  text-align: start;
+  color: var(--textCol2);
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.engineering-skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left:10px;
+}
+.engineering-skill {
+  font-size: 1rem;
   color: var(--secondaryCol);
-  font-family: var(--fontPrimary);
-  margin-bottom: 15px;
+  background-color: rgba(45,199,255, 0.1);
+  border-radius: 9999px;
+  border-width: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
-.projects-card {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.App-background {
-  background-color: var(--primaryCol);
-  min-height: 100vh;
-  }
 
 /* Individual Project Page */
 .project-format {
@@ -131,7 +193,7 @@ li::marker {
   font-weight: bold;
 }
 .project-text {
-  font-size: 1 rem;
+  font-size: 16px;
   color: var(--textCol);
   font-family: var(--fontPrimary);
   margin-top: 5px;
@@ -143,15 +205,19 @@ li::marker {
   padding: 10px; */
   padding-top: 20px;
   padding-bottom: 2px;
-  max-width: 50rem;
-  width:auto;
-  
+  max-width: 60rem;
 }
 .project-picture {
-  height:auto;
+  margin: 5px;
+  width: auto;
+  object-fit: contain;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.project-image-row{
+  padding-top: 20px;
+  max-width: 60rem;
+  max-height: 40rem;
 }
 
 
@@ -160,7 +226,7 @@ li::marker {
   align-items: center;
 }
 .navName {
-  color: var(--textCol);
+  color: var(--textCol1);
   font-family: var(--fontPrimary);
   font-size: 1.8rem;
   margin-left: 2rem;
@@ -175,7 +241,7 @@ li::marker {
   margin-right: 2rem;
 }
 .navElement {
-  color: var(--textCol);
+  color: var(--textCol2);
   font-family: var(--fontPrimary);
   font-size: 1rem;
   margin-left: 2rem;
