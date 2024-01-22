@@ -7,23 +7,21 @@ import arm_2 from '../assets/arm_2.png';
 import arm_3 from '../assets/arm_3.png';
 import arm_4 from '../assets/arm_4.png';
 
+import arm from '../assets/arm_1.png'
 
 function ProjectPage() {
 
     return(
-        <Container className='project-format'>
-            <Row>
-                <div className='project-title'>
+        <div className='project-format'>
+            <div className='project-title'>
                 Designing a Full Anthropromorphic Robotic Hand
-                </div>
-            </Row>
-            <Row style={{marginTop:"10px"}}>
-                <div className='project-subheader'>
+            </div>
+            <div className='project-subheader'>
                     <div className='project-info'>Oct-May 2020</div>
                     <div className='project-info'>   •   </div>
                     <div className='project-info'>Princeton, NJ</div>
                 </div>
-            </Row>
+            <img className="project-image" src={arm} />
             <Row className='project-pill mx-auto'>
                     <Col>
                         <div>
@@ -75,7 +73,7 @@ function ProjectPage() {
                 <img className="project-picture" src={arm_3} />
                 <img className="project-picture" src={arm_4} />
             </Row>
-        </Container>
+        </div>
     );
 }
 

@@ -4,10 +4,11 @@
         "skills" : ["HTML", "CSS", "JavaScript"],
         "start_date" : "July 2020",
         "end_date" : "August 2020",
+        "company": "Black Bolles Alumni Group",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://drive.google.com/uc?id=1956EIsJy8-6maaIYyTmr6EdJHyzdRb7U"
+        "cover_image": "https://cdn-images-1.medium.com/max/747/0*ERFC2uR05GOkRX_o.png"
 
     },
     "arm": {
@@ -15,6 +16,7 @@
         "skills" : ["MATLAB", "SolidWorks", "Arduino/C", "EAGLE"],
         "start_date" : "October 2020",
         "end_date" : "May 2020",
+        "company": "Princeton University",
         "objectives": ["Design a hand that replicates the ranges of motion of a real hand using ten motors.",
                         "Map the natural DOF of the human hand to determine which DOFs are interdependent.",
                     "Construct the hand and perform strength, speed, and reliability testing."],
@@ -25,8 +27,65 @@
         "skills" : ["SOLIDWORKS", "Arduino/C", "EAGLE","Machining"],
         "start_date" : "June 2019",
         "end_date" : "August 2019",
+        "company": "MicroVention-Terumo",
         "objectives": ["Develop a vacuum regulator that is compatible with any commercially sold vacuum pump and can achieve a cycle frequency of at least 5 Hz.",
                         "Develop a cyclical vacuum pump system with a vacuum pressure of at least 29 inHg."],
+        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+    },
+    "Sarr": {
+        "title" : "Developing and Demonstrating a Semi-Autonomous Search and Rescue Robot",
+        "skills" : ["CREO", "Arduino/C", "Controls","CNC"],
+        "start_date" : "February 2019",
+        "end_date" : "May 2019",
+        "company": "Princeton University",
+        "objectives": ["[Team] Build a robot that can complete all tasks in the final demonstration.",
+                        "[Team] Meet all intermediary deadlines and milestones.",
+                        "[Individual] Design the arm mechanism and collaboratively write the autonomous controls."],
+        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+    },
+    "Tissue": {
+        "title" : "Designing an Automatic Tissue Measurement Device",
+        "skills" : ["NX", "Arduino/C", "Controls","Sensors"],
+        "start_date" : "June 2018",
+        "end_date" : "August 2018",
+        "company": "Johnson & Johnson",
+        "objectives": ["Design a novel device that measures organ tissue thickness inside the patient.",
+                        "The device must be operable using one hand.",
+                        "The device must record a thickness measurement once while maintaining 8 g/mm2 of pressure on the tissue, and only compress the tissue in increments of <0.01 mm."],
+        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+    },
+    "Bluetooth": {
+        "title" : "Bluetooth-Enabled Door Opening Device & App",
+        "skills" : ["Android Studios", "Java", "Arduino/C","Bluetooth"],
+        "start_date" : "October 2017",
+        "end_date" : "December 2017",
+        "company": "Princeton University",
+        "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app.",
+                        "The application must pair and communicate with the device via Bluetooth.",
+                        "The device must be light and compact enough to attach to a dormitory door."],
+        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+    },
+    "Shutter": {
+        "title" : "Python-Operated Laser Optics Shutter",
+        "skills" : ["Python", "SOLIDWORKS", "MATLAB","EAGLE"],
+        "start_date" : "October 2017",
+        "end_date" : "December 2017",
+        "company": "Princeton University",
+        "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app.",
+                        "The application must pair and communicate with the device via Bluetooth.",
+                        "The device must be light and compact enough to attach to a dormitory door."],
+        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+    },
+    "Bike": {
+        "title" : "Converting a Single-Speed Bike into an E-Bike",
+        "skills" : ["Machining", "Wiring"],
+        "start_date" : "December 2016",
+        "end_date" : "June 2017",
+        "company": "Princeton University",
+        "objectives": ["Earn machine shop certification before the end of my first semester at Princeton",
+                        "Calculate optimal gear ratio for Princeton’s worst hill incline",
+                        "Design and fabricate apparatus to affix motor, batteries, and other components",
+                        "E-bike must be water, snow, and shock proof to last four years"],
         "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
     }
 }

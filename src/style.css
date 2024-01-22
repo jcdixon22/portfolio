@@ -167,7 +167,18 @@ a, a:hover, a:focus, a:active {
 
 /* Individual Project Page */
 .project-format {
-  margin-top: 30px;
+  margin: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.project-row {
+  justify-content: center;
+}
+.project-image {
+  max-width: 30rem;
 }
 .project-title {
   font-size: 2rem;
@@ -177,7 +188,8 @@ a, a:hover, a:focus, a:active {
 }
 .project-subheader {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .project-info {
   font-size: 1.5rem;

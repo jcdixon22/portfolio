@@ -10,7 +10,6 @@ import projectData from '../project_data.json'
 
 
 function EngineeringPage() {
-    
     return(
         <div className='engineering-format debug'>
             <Row sm={1} lg={2} className='engineering-row'>
