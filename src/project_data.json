@@ -7,7 +7,7 @@
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_1.png?raw=true"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true"
     },
     "celoxis": {
         "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",

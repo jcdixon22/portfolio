@@ -20,7 +20,7 @@ function HomePage() {
                         <div className='text-subtitle'>
                             I dabble in robotics, software, and hardware.
                         </div>
-                        <Button className='home-button'>Check out my Stuff</Button>
+                        <Button className='home-button' href="engineering">Check out my Stuff</Button>
                     </div>
                 </div>
                 <div className='home-col'>

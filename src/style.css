@@ -59,8 +59,8 @@ li::marker {
 /* Homepage */
 .home-format {
   margin: auto;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 5.5rem;
+  margin-right: 5rem;
   justify-content: center;
   margin-top: 5%;
 }
@@ -88,21 +88,22 @@ li::marker {
   margin-right: auto;
 }
 .home-button {
-  background-color: var(--secondaryCol) !important;
-  color: var(--primaryCol) !important;
+  background-color: transparent !important;
+  color: var(--secondaryCol) !important;
   border-radius: 30px !important;
-  border: .5rem solid transparent !important;
-  /* padding-left: 1.2rem !important;
-  padding-right: 1.21rem !important; */
-  font-size: 1rem !important;
-  font-weight: bold !important;
+  border: .1rem solid var(--secondaryCol) !important;
+  padding-left: 1.2rem !important;
+  padding-right: 1.21rem !important;
+  font-size: 1.3rem !important;
+  /* font-weight: bold !important; */
   font-family: var(--fontPrimary) !important;
   margin-top: 2rem;
 }
 .home-button:hover{
-  background-color: transparent !important;
+  background-color: var(--secondaryCol) !important;
+  color: black !important;
   border: 5px solid white;
-  transition: 600ms !important;
+  transition: 400ms !important;
 }
 
 
@@ -123,13 +124,13 @@ li::marker {
   background-color: rgba(255,255,255, 0.04);
   border-radius: 20px;
   padding: 0 !important;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .engineering-entry:hover {
   background-color: rgba(45,199,255, 0.1);
-  transition: 300ms;
+  transition: 100ms;
 }
 .engineering-entry-content {
   margin-left: 20px;
@@ -264,7 +265,7 @@ a, a:hover, a:focus, a:active {
   color: var(--textCol1);
   font-family: var(--fontPrimary);
   font-size: 1.8rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   margin-right: 2rem;
 }
 .navName:hover {
@@ -273,7 +274,7 @@ a, a:hover, a:focus, a:active {
 }
 .navElements {
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 .navElement {
   color: var(--textCol2);
