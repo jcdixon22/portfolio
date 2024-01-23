@@ -3,8 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import arm from '../assets/arm_1.png'
-import pump from '../assets/pump_1.png'
+import data from "../general_data.json"
 import projectData from '../project_data.json'
 
 
@@ -15,7 +14,7 @@ function EngineeringPage() {
             <Row sm={1} lg={2} className='engineering-row'>
                 <a className= "engineering-entry" href="/project">
                     <div className='engineering-entry-content'>
-                        <img className="engineering-image" src={arm} />
+                        <img className="engineering-image" src={data.Home_Page.headshot} />
                         <div className='engineering-title'>
                             Designing a Full Anthropromorphic Robotic Hand
                         </div>
@@ -43,7 +42,7 @@ function EngineeringPage() {
 
                 <a className= "engineering-entry" href="/projectpage">
                     <div className='engineering-entry-content'>
-                        <img className="engineering-image" src={pump} />
+                        <img className="engineering-image" src={data.Home_Page.headshot} />
                         <div className='engineering-title'>
                             Designing a Full Anthropromorphic Robotic Hand
                         </div>

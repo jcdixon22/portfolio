@@ -44,7 +44,7 @@ li::marker {
 }
 .text-header-big {
   font-size: 2.5rem;
-  color: black;
+  color: var(--textCol1);
   font-family: var(--fontPrimary);
 }
 .text-subtitle {
@@ -62,8 +62,25 @@ li::marker {
   justify-content: center;
   margin-top: 5%;
 }
+.home-row {
+  justify-content: center;
+  height: 25rem;
+}
+.home-col {
+  width: 50% !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stacks child divs vertically */
+  justify-content: center; /* Aligns child divs vertically in the center */
+}
 .home-picture {
-  width: 10rem;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--secondaryCol);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -76,8 +93,8 @@ li::marker {
   /* padding-left: 1.2rem !important;
   padding-right: 1.21rem !important; */
   font-size: 1rem !important;
+  font-weight: bold !important;
   font-family: var(--fontPrimary) !important;
-  font-weight: bold;
   margin-top: 2rem;
 }
 .home-button:hover{
@@ -85,10 +102,7 @@ li::marker {
   border: 5px solid white;
   transition: 600ms !important;
 }
-.home-button-container {
-  margin-top: 20px;
-  text-align: center;
-}
+
 
 /* Engineering Page */
 .engineering-format {
@@ -112,7 +126,7 @@ li::marker {
   margin-right: 10px;
 }
 .engineering-entry:hover {
-  background-color: rgba(107,107,107, 0.5);
+  background-color: rgba(45,199,255, 0.1);
   transition: 300ms;
 }
 .engineering-entry-content {
@@ -272,15 +286,10 @@ a, a:hover, a:focus, a:active {
   padding-right: 1.21rem !important; */
   font-size: 1rem !important;
   font-family: var(--fontPrimary) !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .navButton:hover {
   background-color: white !important;
   color: var(--primaryCol) !important;
   transition: 300ms;
 }
-
-.test {
-  display: flex;
-}
-

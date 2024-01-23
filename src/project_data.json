@@ -8,7 +8,7 @@
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://cdn-images-1.medium.com/max/747/0*ERFC2uR05GOkRX_o.png"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/logo192.png?raw=true"
 
     },
     "arm": {

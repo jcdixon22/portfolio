@@ -1,8 +1,6 @@
 
 import Row from 'react-bootstrap/Row';
 
-import mock from '../assets/mock.jpg'
-
 import projectData from '../project_data.json'
 
 const ProjectComponent = ({project}) => {

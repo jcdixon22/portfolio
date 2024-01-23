@@ -3,11 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 
-import arm_2 from '../assets/arm_2.png';
-import arm_3 from '../assets/arm_3.png';
-import arm_4 from '../assets/arm_4.png';
-
-import arm from '../assets/arm_1.png'
+import data from "../general_data.json"
 
 function ProjectPage() {
 
@@ -21,7 +17,7 @@ function ProjectPage() {
                     <div className='project-info'>   •   </div>
                     <div className='project-info'>Princeton, NJ</div>
                 </div>
-            <img className="project-image" src={arm} />
+            <img className="project-image" src={data.Home_Page.headshot} />
             <Row className='project-pill mx-auto'>
                     <Col>
                         <div>
@@ -67,11 +63,11 @@ function ProjectPage() {
                     </Col>
             </Row>
             <Row className='project-image-row mx-auto debug'>
-                <Image className="project-picture" src={arm_2} />
+                <Image className="project-picture" src={data.Home_Page.headshot} />
             </Row>
             <Row className='project-image-row mx-auto debug'>
-                <img className="project-picture" src={arm_3} />
-                <img className="project-picture" src={arm_4} />
+                <img className="project-picture" src={data.Home_Page.headshot} />
+                <img className="project-picture" src={data.Home_Page.headshot} />
             </Row>
         </div>
     );
