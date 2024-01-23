@@ -1,79 +1,44 @@
-import Image from 'react-bootstrap/Image';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import data from "../general_data.json"
 import projectData from '../project_data.json'
 
+const ProjectComponent = ({project}) => {
+    const {title, skills, start_date, end_date, objectives, cover_image} = project;
 
+    return (
+        <a className= "engineering-entry" href="/project">
+            <div className='engineering-entry-content'>
+                <div className='engineering-entry-image-container'>
+                    <img className="engineering-image" src={project.cover_image} />
+                </div>
+                <div className='engineering-title'>
+                    {title}
+                </div>
+                <hr className='engineering-line'/>
+                <ul className='engineering-goals'>
+                    {objectives.map((objective, index) => (
+                        <li key={index}>{objective}</li>
+                    ))}
+                </ul>
+                <div className='engineering-skill-row'>
+                    {skills.map((skill, index) => (
+                        <div key={index} className='engineering-skill'>{skill}</div>
+                    ))}
+                </div>
+            </div>
+        </a>
+    );
+};
 
 function EngineeringPage() {
+    const projectKeys = Object.keys(projectData);
+
     return(
-        <div className='engineering-format debug'>
+        <div className='engineering-format'>
             <Row sm={1} lg={2} className='engineering-row'>
-                <a className= "engineering-entry" href="/project">
-                    <div className='engineering-entry-content'>
-                        <img className="engineering-image" src={data.Home_Page.headshot} />
-                        <div className='engineering-title'>
-                            Designing a Full Anthropromorphic Robotic Hand
-                        </div>
-                        <hr className='engineering-line'/>
-                        <ul className='engineering-goals'>
-                            <li>
-                                Design a hand that replicates the ranges of motion of a real hand using ten motors.
-                            </li>
-                            <li>
-                                Map the natural DOF of the human hand to determine which DOFs are interdependent.
-                            </li>
-                            <li>
-                                Construct the hand and perform strength, speed, and reliability testing.
-                            </li>
-                        </ul>
-                        <div className='engineering-skill-row'>
-                            <div className='engineering-skill'>MATLAB</div>
-                            <div className='engineering-skill'>SOLIDWORKS</div>
-                            <div className='engineering-skill'>Arduino/C</div>
-                            <div className='engineering-skill'>EAGLE</div>
-                            <div className='engineering-skill'>3D Printing</div>
-                        </div>
-                    </div>
-                </a>
-
-                <a className= "engineering-entry" href="/projectpage">
-                    <div className='engineering-entry-content'>
-                        <img className="engineering-image" src={data.Home_Page.headshot} />
-                        <div className='engineering-title'>
-                            Designing a Full Anthropromorphic Robotic Hand
-                        </div>
-                        <hr className='engineering-line'/>
-                        <ul className='engineering-goals'>
-                            <li>
-                                Design a hand that replicates the ranges of motion of a real hand using ten motors.
-                            </li>
-                            <li>
-                                Map the natural DOF of the human hand to determine which DOFs are interdependent.
-                            </li>
-                            <li>
-                                Construct the hand and perform strength, speed, and reliability testing.
-                            </li>
-                            <li>
-                                Construct the hand and perform strength, speed, and reliability testing.
-                            </li>
-                            <li>
-                                Construct the hand and perform strength, speed, and reliability testing.
-                            </li>
-                        </ul>
-                        <div className='engineering-skill-row'>
-                            <div className='engineering-skill'>MATLAB</div>
-                            <div className='engineering-skill'>SOLIDWORKS</div>
-                            <div className='engineering-skill'>Arduino/C</div>
-                            <div className='engineering-skill'>EAGLE</div>
-                            <div className='engineering-skill'>3D Printing</div>
-                        </div>
-                    </div>
-                </a>
-
+                {projectKeys.map((projectKey) => (
+                    <ProjectComponent key={projectKey} project={projectData[projectKey]} />
+                ))}
             </Row>
         </div>
     );

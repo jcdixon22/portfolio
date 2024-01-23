@@ -23,11 +23,6 @@ function TopNavbar() {
                 Engineering
               </div>
             </Nav.Link>
-            <Nav.Link href="scratch">
-              <div className='navElement'>
-                Scratch
-              </div>
-            </Nav.Link>
               <Nav.Link href="#right-link">
                 <Button className='navButton'>Get in Touch</Button>
               </Nav.Link>

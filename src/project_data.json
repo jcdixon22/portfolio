@@ -1,26 +1,35 @@
-{
+    {"portfolio": {
+        "title" : "Creating a Reactive Portfolio Website",
+        "skills" : ["React", "HTML", "CSS", "Javascript"],
+        "start_date" : "July 2020",
+        "end_date" : "August 2020",
+        "company": "Personal Project",
+        "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
+                        "Ensure that users can easily and securely join and donate to organization.",
+                    "Display recent content from the organization’s social media account."],
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_1.png?raw=true"
+    },
     "celoxis": {
         "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",
-        "skills" : ["HTML", "CSS", "JavaScript"],
+        "skills" : ["Python", "Pandas", "APIs", "Data Science"],
         "start_date" : "July 2020",
         "end_date" : "August 2020",
         "company": "Black Bolles Alumni Group",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true"
-
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_1.png?raw=true"
     },
     "labjack": {
         "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",
-        "skills" : ["HTML", "CSS", "JavaScript"],
+        "skills" : ["Python", "APIs", "Data Acquisition", "Circuits"],
         "start_date" : "July 2020",
         "end_date" : "August 2020",
         "company": "Black Bolles Alumni Group",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/labjack_1.jpg?raw=true"
 
     },
     "BBAG": {
@@ -46,7 +55,7 @@
                     "Construct the hand and perform strength, speed, and reliability testing."],
         "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_1.png?raw=true"
     },
-    "Pump": {
+    "pump": {
         "title" : "Developing & Demonstrating a Cyclical Aspiration Pump",
         "skills" : ["SOLIDWORKS", "Arduino/C", "EAGLE","Machining"],
         "start_date" : "June 2019",
@@ -65,7 +74,7 @@
         "objectives": ["[Team] Build a robot that can complete all tasks in the final demonstration.",
                         "[Team] Meet all intermediary deadlines and milestones.",
                         "[Individual] Design the arm mechanism and collaboratively write the autonomous controls."],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_1.png?raw=true"
     },
     "Tissue": {
         "title" : "Designing an Automatic Tissue Measurement Device",
@@ -76,9 +85,9 @@
         "objectives": ["Design a novel device that measures organ tissue thickness inside the patient.",
                         "The device must be operable using one hand.",
                         "The device must record a thickness measurement once while maintaining 8 g/mm2 of pressure on the tissue, and only compress the tissue in increments of <0.01 mm."],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_1.png?raw=true"
     },
-    "Bluetooth": {
+    "Door": {
         "title" : "Bluetooth-Enabled Door Opening Device & App",
         "skills" : ["Android Studios", "Java", "Arduino/C","Bluetooth"],
         "start_date" : "October 2017",
@@ -87,7 +96,7 @@
         "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app.",
                         "The application must pair and communicate with the device via Bluetooth.",
                         "The device must be light and compact enough to attach to a dormitory door."],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_1.png?raw=true"
     },
     "Shutter": {
         "title" : "Python-Operated Laser Optics Shutter",
@@ -98,7 +107,7 @@
         "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app.",
                         "The application must pair and communicate with the device via Bluetooth.",
                         "The device must be light and compact enough to attach to a dormitory door."],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_1.png?raw=true"
     },
     "Bike": {
         "title" : "Converting a Single-Speed Bike into an E-Bike",
@@ -110,6 +119,6 @@
                         "Calculate optimal gear ratio for Princeton’s worst hill incline",
                         "Design and fabricate apparatus to affix motor, batteries, and other components",
                         "E-bike must be water, snow, and shock proof to last four years"],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bike_1.png?raw=true"
     }
 }
