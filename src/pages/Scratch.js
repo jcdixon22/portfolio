@@ -9,7 +9,9 @@ const ProjectComponent = ({project}) => {
     return (
         <a className= "engineering-entry" href="/project">
             <div className='engineering-entry-content'>
-                <img className="engineering-image" src={project.cover_image} />
+                <div className='engineering-entry-image-container'>
+                    <img className="engineering-image" src={project.cover_image} />
+                </div>
                 <div className='engineering-title'>
                     {title}
                 </div>
@@ -33,7 +35,7 @@ function Scratch() {
     const projectKeys = Object.keys(projectData);
 
     return(
-        <div className='engineering-format debug'>
+        <div className='engineering-format'>
             <Row sm={1} lg={2} className='engineering-row'>
                 {projectKeys.map((projectKey) => (
                     <ProjectComponent key={projectKey} project={projectData[projectKey]} />

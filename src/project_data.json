@@ -1,4 +1,28 @@
 {
+    "celoxis": {
+        "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",
+        "skills" : ["HTML", "CSS", "JavaScript"],
+        "start_date" : "July 2020",
+        "end_date" : "August 2020",
+        "company": "Black Bolles Alumni Group",
+        "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
+                        "Ensure that users can easily and securely join and donate to organization.",
+                    "Display recent content from the organization’s social media account."],
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true"
+
+    },
+    "labjack": {
+        "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",
+        "skills" : ["HTML", "CSS", "JavaScript"],
+        "start_date" : "July 2020",
+        "end_date" : "August 2020",
+        "company": "Black Bolles Alumni Group",
+        "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
+                        "Ensure that users can easily and securely join and donate to organization.",
+                    "Display recent content from the organization’s social media account."],
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true"
+
+    },
     "BBAG": {
         "title" : "Developing a Reactive Website for a Non-Profit DEI Organization",
         "skills" : ["HTML", "CSS", "JavaScript"],
@@ -8,7 +32,7 @@
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services.",
                         "Ensure that users can easily and securely join and donate to organization.",
                     "Display recent content from the organization’s social media account."],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/logo192.png?raw=true"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true"
 
     },
     "arm": {
@@ -20,7 +44,7 @@
         "objectives": ["Design a hand that replicates the ranges of motion of a real hand using ten motors.",
                         "Map the natural DOF of the human hand to determine which DOFs are interdependent.",
                     "Construct the hand and perform strength, speed, and reliability testing."],
-        "cover_image": "https://cdn-images-1.medium.com/max/747/0*ERFC2uR05GOkRX_o.png"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_1.png?raw=true"
     },
     "Pump": {
         "title" : "Developing & Demonstrating a Cyclical Aspiration Pump",
@@ -30,7 +54,7 @@
         "company": "MicroVention-Terumo",
         "objectives": ["Develop a vacuum regulator that is compatible with any commercially sold vacuum pump and can achieve a cycle frequency of at least 5 Hz.",
                         "Develop a cyclical vacuum pump system with a vacuum pressure of at least 29 inHg."],
-        "cover_image": "https://www.visittheusa.com/sites/default/files/styles/16_9_1280x720/public/2016-10/Getty_591648687_Brand_City_SanFrancisco_Hero_FinalCrop.jpg?h=dd3c63f2&itok=NqcWiJZn"
+        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_1.png?raw=true"
     },
     "Sarr": {
         "title" : "Developing and Demonstrating a Semi-Autonomous Search and Rescue Robot",
