@@ -3,7 +3,7 @@
 /* Base Stuff*/
 :root {
   --primaryCol: #141414;
-  --secondaryCol: #ff4c2d;
+  --secondaryCol: #2DC7FF;
   --textCol1: white;
   --textCol2: #D3D3D3;
   --fontPrimary: 'Poppins', sans-serif;
@@ -120,7 +120,7 @@ li::marker {
   justify-content: center;
 }
 .engineering-entry {
-  max-width: 450px !important;
+  max-width: 300px !important;
   background-color: rgba(255,255,255, 0.04);
   border-radius: 20px;
   padding: 0 !important;
