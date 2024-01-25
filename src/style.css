@@ -110,17 +110,17 @@ li::marker {
 /* Engineering Page */
 .engineering-format {
   margin: auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 2vw;
+  margin-right: 2vw;
   justify-content: center;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 5vw;
 }
 .engineering-row {
   justify-content: center;
 }
 .engineering-entry {
-  max-width: 30rem !important;
+  max-width: 450px !important;
   background-color: rgba(255,255,255, 0.04);
   border-radius: 20px;
   padding: 0 !important;
