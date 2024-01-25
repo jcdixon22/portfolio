@@ -7,8 +7,8 @@ import data from "../general_data.json"
 import projectData from '../project_data.json'
 import { computeHeadingLevel } from '@testing-library/react';
 
-function PortfolioPage() {
-    const {title, company, skills, start_date, end_date, objectives, images} = projectData.bike;
+function SarrPage() {
+    const {title, company, skills, start_date, end_date, objectives, images} = projectData.ssar;
 
     return(
         <div className='project-format'>
@@ -56,4 +56,4 @@ function PortfolioPage() {
     );
 }
 
-export default PortfolioPage;
+export default SarrPage;

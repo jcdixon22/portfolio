@@ -23,11 +23,11 @@ function TopNavbar() {
                 Engineering
               </div>
             </Nav.Link>
-              <Nav.Link href="#right-link">
-                <Button className='navButton'>Get in Touch</Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+            {/* <Nav.Link href="#right-link">
+              <Button className='navButton'>Get in Touch</Button>
+            </Nav.Link> */}
+          </Nav>
+        </Navbar.Collapse>
     </Navbar>
 
     );

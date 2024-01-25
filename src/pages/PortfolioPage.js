@@ -5,10 +5,9 @@ import Image from 'react-bootstrap/Image';
 
 import data from "../general_data.json"
 import projectData from '../project_data.json'
-import { computeHeadingLevel } from '@testing-library/react';
 
 function PortfolioPage() {
-    const {title, company, skills, start_date, end_date, objectives, images} = projectData.bike;
+    const {title, company, skills, start_date, end_date, objectives, images} = projectData.portfolio;
 
     return(
         <div className='project-format'>

@@ -1,12 +1,13 @@
 import Row from 'react-bootstrap/Row';
 
+
 import projectData from '../project_data.json'
 
 const ProjectComponent = ({project}) => {
-    const {title, skills, start_date, end_date, objectives, cover_image} = project;
+    const {title, skills, start_date, end_date, objectives, cover_image,address} = project;
 
     return (
-        <a className= "engineering-entry" href="/project">
+        <a className= "engineering-entry" href={address}>
             <div className='engineering-entry-content'>
                 <div className='engineering-entry-image-container'>
                     <img className="engineering-image" src={project.cover_image} />
@@ -32,7 +33,6 @@ const ProjectComponent = ({project}) => {
 
 function EngineeringPage() {
     const projectKeys = Object.keys(projectData);
-
     return(
         <div className='engineering-format'>
             <Row sm={1} lg={2} className='engineering-row'>

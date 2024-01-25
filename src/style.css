@@ -196,13 +196,10 @@ a, a:hover, a:focus, a:active {
   margin-right: 2rem;
   justify-content: center;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 2rem;
 }
 .project-row {
   justify-content: center;
-}
-.project-image {
-  max-width: 30rem;
 }
 .project-title {
   font-size: 2rem;
@@ -212,8 +209,8 @@ a, a:hover, a:focus, a:active {
 }
 .project-subheader {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .project-info {
   font-size: 1.5rem;
@@ -229,8 +226,9 @@ a, a:hover, a:focus, a:active {
   font-weight: bold;
 }
 .project-text {
-  font-size: 16px;
-  color: var(--textCol);
+  font-size: 1rem;
+  text-align: start;
+  color: var(--textCol2);
   font-family: var(--fontPrimary);
   margin-top: 5px;
 }
@@ -243,17 +241,24 @@ a, a:hover, a:focus, a:active {
   padding-bottom: 2px;
   max-width: 60rem;
 }
-.project-picture {
-  margin: 5px;
-  width: auto;
-  object-fit: contain;
-  display: block;
+.project-line {
+  color: var(--secondaryCol);
+  width: 80%;
+  max-width: 50rem;
 }
-
 .project-image-row{
   padding-top: 20px;
-  max-width: 60rem;
-  max-height: 40rem;
+  max-width: 40rem;
+}
+.project-image {
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+  border-color: var(--secondaryCol);
+
 }
 
 

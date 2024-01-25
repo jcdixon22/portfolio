@@ -10,7 +10,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage.js'
 import EngineeringPage from './pages/EngineeringPage.js'
 import ProjectPage from './pages/ProjectPage.js'
-import Scratch from './pages/Scratch.js';
+import PortfolioPage from './pages/ProjectPage.js';
+import CeloxisPage  from './pages/CeloxisPage.js';
+import LabjackPage from './pages/LabjackPage.js';
+import BbagPage from './pages/BbagPage.js';
+import ArmPage from './pages/ArmPage.js';
+import PumpPage from './pages/PumpPage.js';
+import SarrPage from './pages/SarrPage.js';
+import TissuePage from './pages/TissuePage.js';
+import BluetoothPage from './pages/BluetoothPage.js';
+import ShutterPage from './pages/ShutterPage.js';
+import BikePage from './pages/BikePage.js';
+
 
 function App() {
   return (
@@ -20,7 +31,18 @@ function App() {
           <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="engineering" element={<EngineeringPage />} />
-              <Route path="project" element={<ProjectPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/datatransfer" element={<CeloxisPage />} />
+              <Route path="/daq" element={<LabjackPage />} />
+              <Route path="/bbag" element={<BbagPage />} />
+              <Route path="/arm" element={<ArmPage />} />
+              <Route path="/pump" element={<PumpPage />} />
+              <Route path="/sarr" element={<SarrPage />} />
+              <Route path="/tissue" element={<TissuePage />} />
+              <Route path="/bluetooth" element={<BluetoothPage />} />
+              <Route path="/shutter" element={<ShutterPage />} />
+              <Route path="/bike" element={<BikePage />} />
+
           </Routes>
         </BrowserRouter>
     </div>
