@@ -203,7 +203,7 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
 }
 .project-title {
-  font-size: 250%;
+  font-size: 2vw;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
