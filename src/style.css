@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* Base Stuff*/
-:root {
-  --primaryCol: #141414;
-  --secondaryCol: #2DC7FF;
-  --textCol1: white;
-  --textCol2: #D3D3D3;
-  --fontPrimary: 'Poppins', sans-serif;
+@media only screen and (max-width: 600px) {
+  :root {
+    --primaryCol: #141414;
+    --secondaryCol: red;
+    --textCol1: white;
+    --textCol2: #D3D3D3;
+    --fontPrimary: 'Poppins', sans-serif;
+  }
 }
+@media only screen and (min-width: 601px) {
+  :root {
+    --primaryCol: #141414;
+    --secondaryCol: #2DC7FF;
+    --textCol1: white;
+    --textCol2: #D3D3D3;
+    --fontPrimary: 'Poppins', sans-serif;
+  }
+}
+
+/* Base Stuff*/
+
 .debug {
   outline: 1px solid red;
 }
