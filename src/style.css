@@ -1,23 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@media only screen and (max-width: 600px) {
-  :root {
-    --primaryCol: #141414;
-    --secondaryCol: red;
-    --textCol1: white;
-    --textCol2: #D3D3D3;
-    --fontPrimary: 'Poppins', sans-serif;
-  }
+
+:root {
+  --primaryCol: #141414;
+  --secondaryCol: #2DC7FF;
+  --textCol1: white;
+  --textCol2: #D3D3D3;
+  --fontPrimary: 'Poppins', sans-serif;
 }
-@media only screen and (min-width: 601px) {
-  :root {
-    --primaryCol: #141414;
-    --secondaryCol: #2DC7FF;
-    --textCol1: white;
-    --textCol2: #D3D3D3;
-    --fontPrimary: 'Poppins', sans-serif;
-  }
-}
+
 
 /* Base Stuff*/
 
@@ -52,18 +43,18 @@ li::marker {
 
 /* Text */
 .text-header-jumbo {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   margin-top: 1vw;
 }
 .text-header-big {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   color: var(--textCol1);
   font-family: var(--fontPrimary);
 }
 .text-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: white;
   font-family: var(--fontPrimary);
   margin-top: 1vw;
@@ -105,7 +96,7 @@ li::marker {
   background-color: transparent !important;
   color: var(--secondaryCol) !important;
   border-radius: 30px !important;
-  border: .1rem solid var(--secondaryCol) !important;
+  border: .1vw solid var(--secondaryCol) !important;
   padding-left: 1.2vw !important;
   padding-right: 1.21vw !important;
   font-size: 1.3vw !important;
