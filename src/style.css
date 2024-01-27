@@ -254,7 +254,8 @@ a, a:hover, a:focus, a:active {
 }
 .project-image-row{
   padding-top: 20px;
-  max-width: 40vw;
+  /* max-width: 40vw; */
+  max-width: 60%;
 }
 .project-image {
   width: auto;
