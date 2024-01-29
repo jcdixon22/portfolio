@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
+import ImageWithLoading from '../components/ImageWithLoading';
 
 import data from "../general_data.json"
 
@@ -24,7 +25,8 @@ function HomePage() {
                     </div>
                 </div>
                 <div className='home-col'>
-                    <Image className="home-picture" src={data.Home_Page.headshot} />
+                    {/* <Image className="home-picture" src={data.Home_Page.headshot} /> */}
+                    <img className="home-picture" src={data.Home_Page.headshot} />
                 </div>
             </Row>
         </div>

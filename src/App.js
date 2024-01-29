@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage.js'
 import EngineeringPage from './pages/EngineeringPage.js'
 import ProjectPage from './pages/ProjectPage.js'
-import PortfolioPage from './pages/ProjectPage.js';
+import PortfolioPage from './pages/PortfolioPage.js';
 import CeloxisPage  from './pages/CeloxisPage.js';
 import LabjackPage from './pages/LabjackPage.js';
 import BbagPage from './pages/BbagPage.js';

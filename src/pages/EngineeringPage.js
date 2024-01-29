@@ -1,5 +1,5 @@
 import Row from 'react-bootstrap/Row';
-
+import ImageWithLoading from '../components/ImageWithLoading';
 
 import projectData from '../project_data.json'
 
