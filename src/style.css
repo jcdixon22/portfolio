@@ -246,24 +246,24 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
 }
 .project-title {
-  font-size: clamp(1rem,4vw,2rem);
+  font-size: clamp(1rem,4.5vw,2.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
 }
 .project-subheader {
-  font-size: clamp(1rem,4vw,1.5rem);
+  font-size: clamp(1rem,3.5vw,1.5rem);
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
 .project-info {
-  font-size: clamp(1rem,4vw,1.5rem);
+  font-size: clamp(1rem,3.5vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   display: inline;
 }
 .project-subtitle {
-  font-size: clamp(1rem,4vw,1.5rem);
+  font-size: clamp(1rem,3.5vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
