@@ -246,8 +246,7 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
 }
 .project-title {
-  /* font-size: 2vw; */
-  font-size: 200%;
+  font-size: clamp(1rem,4vw,2rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
@@ -271,7 +270,8 @@ a, a:hover, a:focus, a:active {
   font-weight: bold;
 }
 .project-text {
-  font-size: 1vw;
+  /* font-size: 1vw; */
+  font-size: 100%;
   text-align: start;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
