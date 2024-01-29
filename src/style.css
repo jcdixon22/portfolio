@@ -70,18 +70,18 @@ li::marker {
 
 /* Text */
 .text-header-jumbo {
-  font-size: 3.5vw;
+  font-size: 40px;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   margin-top: 1vw;
 }
 .text-header-big {
-  font-size: 2.4vw;
+  font-size: 35px;
   color: var(--textCol1);
   font-family: var(--fontPrimary);
 }
 .text-subtitle {
-  font-size: 1.2vw;
+  font-size: 16px;
   color: white;
   font-family: var(--fontPrimary);
   margin-top: 1vw;
@@ -122,9 +122,9 @@ li::marker {
   color: var(--secondaryCol) !important;
   border-radius: 30px !important;
   border: .1rem solid var(--secondaryCol) !important;
-  padding-left: 1.2rem !important;
-  padding-right: 1.2rem!important;
-  font-size: 1.1rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem!important;
+  font-size: 16px !important;
   /* font-weight: bold !important; */
   font-family: var(--fontPrimary) !important;
   margin-top: 2rem;
