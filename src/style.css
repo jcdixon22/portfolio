@@ -104,11 +104,11 @@ li::marker {
   height: 100%;
 }
 .home-picture {
-  /* max-height: 100%;
+  max-height: 100%;
   width: auto;
-  max-width: 100%; */
-  width:300px;
-  height:300px;
+  max-width: 100%;
+  /* width:300px;
+  height:300px; */
   border-radius: 9999px;
   border-style: solid;
   border-width: 5px;
@@ -247,7 +247,7 @@ a, a:hover, a:focus, a:active {
 }
 .project-title {
   /* font-size: 2vw; */
-  font-size: 36px;
+  font-size: 200%;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
@@ -259,14 +259,14 @@ a, a:hover, a:focus, a:active {
 }
 .project-info {
   /* font-size: 1.5vw; */
-  font-size: 28px;
+  font-size: 150%;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   display: inline;
 }
 .project-subtitle {
   /* font-size: 1.5vw; */
-  font-size: 28px;
+  font-size: 150%;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
@@ -274,7 +274,7 @@ a, a:hover, a:focus, a:active {
 }
 .project-text {
   /* font-size: 1vw; */
-  font-size: 16px;
+  font-size: 100%;
   text-align: start;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
