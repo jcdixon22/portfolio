@@ -70,18 +70,18 @@ li::marker {
 
 /* Text */
 .text-header-jumbo {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   margin-top: 1vw;
 }
 .text-header-big {
-  font-size: 2.4rem;
+  font-size: 2.4vw;
   color: var(--textCol1);
   font-family: var(--fontPrimary);
 }
 .text-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   color: white;
   font-family: var(--fontPrimary);
   margin-top: 1vw;
@@ -121,13 +121,13 @@ li::marker {
   background-color: transparent !important;
   color: var(--secondaryCol) !important;
   border-radius: 30px !important;
-  border: .1vw solid var(--secondaryCol) !important;
-  padding-left: 1.2vw !important;
-  padding-right: 1.21vw !important;
+  border: .1rem solid var(--secondaryCol) !important;
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem!important;
   font-size: 1.1rem !important;
   /* font-weight: bold !important; */
   font-family: var(--fontPrimary) !important;
-  margin-top: 2vw;
+  margin-top: 2rem;
 }
 .home-button:hover{
   background-color: var(--secondaryCol) !important;
