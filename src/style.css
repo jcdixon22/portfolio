@@ -252,18 +252,18 @@ a, a:hover, a:focus, a:active {
   text-align: center;
 }
 .project-subheader {
-  text-align: center;
+  font-size: clamp(1rem,4vw,1.5rem);
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
 .project-info {
-  font-size: 1.5vw;
+  font-size: clamp(1rem,4vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   display: inline;
 }
 .project-subtitle {
-  font-size: 1.5vw;
+  font-size: clamp(1rem,4vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
@@ -271,7 +271,7 @@ a, a:hover, a:focus, a:active {
 }
 .project-text {
   /* font-size: 1vw; */
-  font-size: 100%;
+  font-size: clamp(0.5rem,2vw,1rem);
   text-align: start;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
