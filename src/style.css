@@ -258,23 +258,20 @@ a, a:hover, a:focus, a:active {
   margin-bottom: 1vw;
 }
 .project-info {
-  /* font-size: 1.5vw; */
-  font-size: 150%;
+  font-size: 1.5vw;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   display: inline;
 }
 .project-subtitle {
-  /* font-size: 1.5vw; */
-  font-size: 150%;
+  font-size: 1.5vw;
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
   font-weight: bold;
 }
 .project-text {
-  /* font-size: 1vw; */
-  font-size: 100%;
+  font-size: 1vw;
   text-align: start;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
