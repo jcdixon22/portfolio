@@ -21,6 +21,7 @@ import TissuePage from './pages/TissuePage.js';
 import BluetoothPage from './pages/BluetoothPage.js';
 import ShutterPage from './pages/ShutterPage.js';
 import BikePage from './pages/BikePage.js';
+import ContactPage from './pages/ContactPage.js';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="engineering" element={<EngineeringPage />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/datatransfer" element={<CeloxisPage />} />
               <Route path="/daq" element={<LabjackPage />} />

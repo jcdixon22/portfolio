@@ -23,9 +23,9 @@ function TopNavbar() {
                 Engineering
               </div>
             </Nav.Link>
-            {/* <Nav.Link href="#right-link">
+            <Nav.Link href="/contact">
               <Button className='navButton'>Get in Touch</Button>
-            </Nav.Link> */}
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>

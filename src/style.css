@@ -141,6 +141,72 @@ li::marker {
   transition: 400ms !important;
 }
 
+/* Contact Page */
+.contact-row {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+.contact-title {
+  font-size: 35px;
+  color: var(--secondaryCol);
+  font-family: var(--fontPrimary);
+  margin-bottom: 20px;
+}
+.contact-header {
+  font-size: 16px;
+  color: var(--textCol2);
+  font-family: var(--fontPrimary);
+  margin-bottom: 10px;
+  color: white;
+}
+.contact-general {
+  background-color: rgba(255,255,255, 0.04);
+  max-width: 300px;
+  border-radius: 8px !important;
+  border: .1rem solid var(--secondaryCol) !important;
+  margin-bottom: 20px;
+  color: white;
+}
+.contact-message {
+  background-color: rgba(255,255,255, 0.04);
+  max-width: 100%;
+  border-radius: 8px !important;
+  border: .1rem solid var(--secondaryCol) !important;
+  margin-bottom: 20px;
+  color: white;
+}
+.contact-submit {
+  background-color: transparent !important;
+  color: var(--secondaryCol) !important;
+  border-radius: 30px !important;
+  border: .1rem solid var(--secondaryCol) !important;
+  padding: 5px;
+  font-size: 20px !important;
+  font-family: var(--fontPrimary) !important;
+  width: 100px;
+  margin-top: 5px;
+}
+.contact-submit:hover{
+  background-color: var(--secondaryCol) !important;
+  color: black !important;
+  border: 5px solid white;
+  transition: 400ms !important;
+}
+.contact-recieved {
+  font-size: 16px;
+  color: var(--textCol2);
+  font-family: var(--fontPrimary);
+  margin-top: 10px;
+  color: white;
+}
+.contact-project-link {
+  color: var(--secondaryCol) !important;
+}
+.contact-project-link:hover {
+  color: white !important;
+}
 
 /* Engineering Page */
 .engineering-format {
@@ -350,18 +416,19 @@ a, a:hover, a:focus, a:active {
   transition: 300ms;
 }
 .navButton {
-  background-color: var(--secondaryCol) !important;
-  color: var(--primaryCol) !important;
+  background-color: transparent !important;
+  color: var(--secondaryCol) !important;
   border-radius: 30px !important;
-  border: 5px solid transparent !important;
-  /* padding-left: 1.2rem !important;
-  padding-right: 1.21rem !important; */
+  border: .1rem solid var(--secondaryCol) !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem!important;
   font-size: 1rem !important;
+  /* font-weight: bold !important; */
   font-family: var(--fontPrimary) !important;
-  font-weight: bold !important;
 }
 .navButton:hover {
-  background-color: white !important;
-  color: var(--primaryCol) !important;
-  transition: 300ms;
+  background-color: var(--secondaryCol) !important;
+  color: black !important;
+  border: 5px solid white;
+  transition: 400ms !important;
 }
