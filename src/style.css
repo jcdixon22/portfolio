@@ -97,14 +97,19 @@ li::marker {
 }
 .home-row {
   justify-content: center;
-  height: 25vw;
+  height: 35vw;
 }
-.home-col {
-  width: 50% !important;
-  height: 100%;
+.home-col2 {
+  /* width: 50% !important; */
+  min-width: 400px !important;
+  height: 350px;
+}
+.home-col1 {
+  /* width: 50% !important; */
+  height: 350px;
 }
 .home-picture {
-  max-height: 100%;
+  max-height: 350px;
   width: auto;
   max-width: 100%;
   /* width:300px;
@@ -154,6 +159,10 @@ li::marker {
   background-color: rgba(255,255,255, 0.04);
   border-radius: 20px;
   padding: 0 !important;
+  /* padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:30px;
+  padding-right:30px; */
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -181,6 +190,7 @@ li::marker {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  height:100%;
 }
 .engineering-entry-image-container {
   height: 20rem;

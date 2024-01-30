@@ -1,5 +1,5 @@
     {"portfolio": {
-        "title" : "ReactJS Portfolio Website [In-Progress]",
+        "title" : "ReactJS Portfolio Website",
         "skills" : ["React", "HTML", "CSS", "Javascript"],
         "start_date" : "Dec 2023",
         "end_date" : "Ongoing",
@@ -9,7 +9,7 @@
                     ],
         "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true"
+            ""
         ],
         "address": "/portfolio"
     },

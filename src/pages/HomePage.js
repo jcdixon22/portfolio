@@ -11,7 +11,11 @@ function HomePage() {
     return(
         <div className='home-format'>
             <Row className='home-row' sm={1} lg={2}>
-                <div className='home-col'>
+                <div className='home-col1'>
+                    {/* <Image className="home-picture" src={data.Home_Page.headshot} /> */}
+                    <img className="home-picture" src={data.Home_Page.headshot} />
+                </div>
+                <div className='home-col2'>
                     <div>
                         <div className='text-header-big'> Hi,</div>
                         <div className='text-header-jumbo'>I'm Justice</div>
@@ -19,14 +23,10 @@ function HomePage() {
                             An engineer based in San Francisco.
                         </div>
                         <div className='text-subtitle'>
-                            I dabble in robotics, software, and hardware.
+                            I specialize in robotics, software, and hardware.
                         </div>
                         <Button className='home-button' href="engineering">Check out my Stuff</Button>
                     </div>
-                </div>
-                <div className='home-col'>
-                    {/* <Image className="home-picture" src={data.Home_Page.headshot} /> */}
-                    <img className="home-picture" src={data.Home_Page.headshot} />
                 </div>
             </Row>
         </div>
