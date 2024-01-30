@@ -5,12 +5,15 @@ function ContactForm() {
 
   // Functions that change the contact page upon submission
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Call both sendEmail and setSubmitted
+    sendEmail(e);
     setSubmitted(true);
   };
 
+  // Functions that send the email
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_hcdk96x', 'template_j6y0g9o', form.current, '7C_pkEcud8D_XGfqr')
