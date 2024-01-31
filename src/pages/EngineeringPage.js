@@ -10,7 +10,7 @@ const ProjectComponent = ({project}) => {
         <a className= "engineering-entry" href={address}>
             <div className='engineering-entry-content'>
                 <div className='engineering-entry-image-container'>
-                    <img className="engineering-image" src={project.cover_image} />
+                    <ImageWithLoading className="engineering-image" src={project.cover_image} />
                 </div>
                 <div className='engineering-title'>
                     {title}

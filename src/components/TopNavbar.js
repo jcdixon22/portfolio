@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function TopNavbar() {
     return (
-      <Navbar collapseOnSelect expand="sm">
+      <Navbar collapseOnSelect expand="sm" data-bs-theme="dark">
           <Nav>
             <Nav.Link href="/">
               <div className='navName'>
@@ -15,8 +15,8 @@ function TopNavbar() {
               </div>
             </Nav.Link>
           </Nav>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-        <Navbar.Collapse id="responsive-navbar-nav" className='navElements'>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-hamburger'/>
+        <Navbar.Collapse id="responsive-navbar-nav" className='navElements navbar-light'>
           <Nav className="navVertAlign">
             <Nav.Link href="engineering">
               <div className='navElement'>
