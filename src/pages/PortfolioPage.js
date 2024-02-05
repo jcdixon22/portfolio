@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 
 import data from "../general_data.json"
 import projectData from '../project_data.json'
+import ProjectImageSkeleton from '../components/ProjectImageSkeleton';
 
 function PortfolioPage() {
     const {title, company, skills, start_date, end_date, objectives, images} = projectData.portfolio;
@@ -48,7 +49,7 @@ function PortfolioPage() {
             <hr className='project-line mx-auto'></hr>
             <Row className='project-image-row mx-auto'>
               {images.map((image, index) => (
-                    <img className="project-image" key={index} src={image}></img>
+                    <ProjectImageSkeleton className="project-image" key={index} src={image}/>
                 ))}
             </Row>
         </div>

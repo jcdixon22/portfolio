@@ -50,7 +50,7 @@ function LabjackPage() {
             <hr className='project-line mx-auto'></hr>
             <Row className='project-image-row mx-auto'>
               {images.map((image, index) => (
-                    <img className="project-image" key={index} src={image}/>
+                    <ProjectImageSkeleton className="project-image" key={index} src={image}/>
                 ))}
             </Row>
         </div>

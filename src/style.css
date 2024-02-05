@@ -48,14 +48,26 @@ li::marker {
   width: 100%;
   border-radius: 20px;
   background-color: rgba(255,255,255, 0.04);
-
+  animation: simmer-loading 1s linear infinite alternate;
 }
-@keyframes loading-animation {
+@keyframes engineering-loading-animation {
   0% {
     background-color: hsl(200, 20%, 70%);
   }
   100% {
     background-color: hsl(200, 20%, 95%);
+  }
+}
+
+@keyframes simmer-loading {
+  0% {
+    background-color: rgba(255,255,255, 0.04);;
+  }
+  50% {
+    background-color: rgba(255,255,255, 0.1);;
+  }
+  100% {
+    background-color: rgba(255,255,255, 0.04);;
   }
 }
 
@@ -381,13 +393,34 @@ a, a:hover, a:focus, a:active {
 }
 .project-image {
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   margin-bottom: 2rem;
   border: 2px solid;
   border-radius: 20px;
   padding: 10px;
   border-color: var(--secondaryCol);
-
+}
+.project-loading-animation {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 300px;
+  width: 800px;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 10px;
+  border-color: var(--secondaryCol);
+  background-color: rgba(255,255,255, 0.04);
+  animation: simmer-loading 1s linear infinite alternate;
+}
+@keyframes project-loading-animation {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }
 
 

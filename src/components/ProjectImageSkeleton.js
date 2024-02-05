@@ -9,9 +9,9 @@ const ProjectImageSkeleton = ({ src, className}) => {
   };
 
   return (
-    <div className='image-wrapper'>
+    <div className='test'>
       {!loaded && <ProjectLoadAnimation />}
-      <img className={className}
+      <img className="project-image"
         src={src}
         onLoad={handleImageLoad}
         style={{ display: loaded ? 'block' : 'none' }}
