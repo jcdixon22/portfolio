@@ -1,5 +1,5 @@
 import Row from 'react-bootstrap/Row';
-import ImageWithLoading from '../components/ImageWithLoading';
+import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
 
 import projectData from '../project_data.json'
 
@@ -10,7 +10,7 @@ const ProjectComponent = ({project}) => {
         <a className= "engineering-entry" href={address}>
             <div className='engineering-entry-content'>
                 <div className='engineering-entry-image-container'>
-                    <ImageWithLoading className="engineering-image" src={project.cover_image} />
+                    <EngineeringImageSkeleton className="engineering-image" src={project.cover_image} />
                 </div>
                 <div className='engineering-title'>
                     {title}
