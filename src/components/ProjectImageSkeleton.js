@@ -9,7 +9,7 @@ const ProjectImageSkeleton = ({ src, className}) => {
   };
 
   return (
-    <div className='test'>
+    <div>
       {!loaded && <ProjectLoadAnimation />}
       <img className="project-image"
         src={src}

@@ -211,13 +211,20 @@ li::marker {
   font-family: var(--fontPrimary) !important;
   width: 100px;
   margin-top: 5px;
+  /* Transition Stuff */
+  box-shadow: inset 0 0 0 0 var(--secondaryCol);
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 
 }
 .contact-submit:hover{
   background-color: var(--secondaryCol) !important;
   color: black !important;
   border: 5px solid white;
-  transition: 400ms;
+  /* Transition Stuff */
+  box-shadow: inset 400px 0 0 0 var(--secondaryCol);
+  transition: ease-out 0.5s;
 
 }
 .contact-recieved {
@@ -394,6 +401,7 @@ a, a:hover, a:focus, a:active {
 .project-image {
   width: auto;
   max-width: 100%;
+  min-height: 300px;
   object-fit: contain;
   margin-bottom: 2rem;
   border: 2px solid;
