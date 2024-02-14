@@ -44,6 +44,7 @@ function App() {
               <Route path="/bluetooth" element={<BluetoothPage />} />
               <Route path="/shutter" element={<ShutterPage />} />
               <Route path="/bike" element={<BikePage />} />
+              <Route path="/athletics" element={<Athletics />} />
 
           </Routes>
         </BrowserRouter>
