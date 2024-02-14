@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import LoadingAnimation from '../components/ImageLoadAnimation';
+import EngineeringLoadAnimation from './EngineeringLoadAnimation';
 
-const ImageWithLoading = ({ src, className}) => {
+const EngineeringImageSkeleton = ({ src, className}) => {
   const [loaded, setLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -10,7 +10,7 @@ const ImageWithLoading = ({ src, className}) => {
 
   return (
     <div className='image-wrapper'>
-      {!loaded && <LoadingAnimation />}
+      {!loaded && <EngineeringLoadAnimation />}
       <img className={className}
         src={src}
         onLoad={handleImageLoad}
@@ -20,4 +20,4 @@ const ImageWithLoading = ({ src, className}) => {
   );
 };
 
-export default ImageWithLoading;
+export default EngineeringImageSkeleton;

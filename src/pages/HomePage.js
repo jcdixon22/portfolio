@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
-import ImageWithLoading from '../components/ImageWithLoading';
+import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
 
 import data from "../general_data.json"
 
@@ -13,7 +13,7 @@ function HomePage() {
             <Row className='home-row' sm={1} lg={2}>
                 <div className='home-col1'>
                     {/* <Image className="home-picture" src={data.Home_Page.headshot} /> */}
-                    <img className="home-picture" src={data.Home_Page.headshot} />
+                    <EngineeringImageSkeleton className="home-picture" src={data.Home_Page.headshot} />
                 </div>
                 <div className='home-col2'>
                     <div>

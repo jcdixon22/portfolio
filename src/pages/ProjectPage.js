@@ -1,14 +1,9 @@
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import ProjectImageSkeleton from '../components/ProjectImageSkeleton';
 
-import data from "../general_data.json"
-import projectData from '../project_data.json'
-import { computeHeadingLevel } from '@testing-library/react';
-
-function PortfolioPage() {
-    const {title, company, skills, start_date, end_date, objectives, images} = projectData.bike;
+function ProjectPage({project}) {
+    const {title, company, skills, start_date, end_date, objectives, images} = project;
 
     return(
         <div className='project-format'>
@@ -49,11 +44,11 @@ function PortfolioPage() {
             <hr className='project-line mx-auto'></hr>
             <Row className='project-image-row mx-auto'>
               {images.map((image, index) => (
-                    <img className="project-image" key={index} src={image}></img>
+                    <img className="project-image" key={index} src={image}/>
                 ))}
             </Row>
         </div>
     );
 }
 
-export default PortfolioPage;
+export default ProjectPage;
