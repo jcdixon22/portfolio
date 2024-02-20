@@ -431,6 +431,29 @@ a, a:hover, a:focus, a:active {
   }
 }
 
+/* Travel */
+.mapContainer {
+  width: 800px;
+  height: 600px;
+  margin-top: 20px;
+  background-color: black;
+  border: 2px solid var(--secondaryCol);
+}
+.worldMap {
+  fill: rgba(45,199,255, 0.1);
+  stroke: rgba(45,199,255, 0.1);
+  outline: none;
+}
+.mapMarker {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mapMarker:hover {
+  background-color: white;
+}
 
 /* Nav Bar */
 .navVertAlign {

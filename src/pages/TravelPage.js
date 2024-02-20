@@ -1,5 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import MapChart from '../components/MapChart';
 
 function AthleticsPage() {
 
@@ -8,6 +9,8 @@ function AthleticsPage() {
             <div className='project-title'>
                 Travel Page - Work in Progress
             </div>
+            <MapChart />
+
         </div>
     );
 }
