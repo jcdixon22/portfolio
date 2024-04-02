@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-:root {
+/* :root {
   --primaryCol: #141414;
   --secondaryCol: #2DC7FF;
   --textCol1: white;
   --textCol2: #D3D3D3;
   --fontPrimary: 'Poppins', sans-serif;
   --loading-grey: #ededed;
+  --engineeringCard: #ffffff0a;
+  --engineeringCard-hover: #ffffff1a;
+  --engineeringSkill: #2dc7ff1a;
+} */
+
+:root {
+  --primaryCol: #F5F5F5;
+  --secondaryCol: #2DC7FF;
+  --textCol1: black;
+  --textCol2: #999999;
+  --fontPrimary: 'Poppins', sans-serif;
+  --loading-grey: #ededed;
+  --engineeringCard: #eaeaea;
+  --engineeringCard-hover: #2dc7ff1a;
+  --engineeringSkill: #2dc7ff3a;
 }
 
-
 /* Base Stuff*/
-
 .debug {
   outline: 1px solid red;
 }
@@ -26,7 +39,6 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -47,7 +59,7 @@ li::marker {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-  background-color: rgba(255,255,255, 0.04);
+  background-color: var(--engineeringCard);
   animation: simmer-loading 1s linear infinite alternate;
 }
 @keyframes engineering-loading-animation {
@@ -89,7 +101,7 @@ li::marker {
 }
 .text-subtitle {
   font-size: 16px;
-  color: white;
+  color: var(--fontPrimary);
   font-family: var(--fontPrimary);
   margin-top: 1vw;
 }
@@ -156,7 +168,7 @@ li::marker {
 }
 .home-button:hover{
   background-color: var(--secondaryCol) !important;
-  color: black !important;
+  color: var(--primaryCol) !important;
   border: 5px solid white;
   /* Transition Stuff */
   box-shadow: inset 400px 0 0 0 var(--secondaryCol);
@@ -183,23 +195,23 @@ li::marker {
   color: var(--textCol2);
   font-family: var(--fontPrimary);
   margin-bottom: 10px;
-  color: white;
+  color: var(--textCol1);
 }
 .contact-general {
-  background-color: rgba(255,255,255, 0.04);
+  background-color: var(--engineeringCard);
   max-width: 300px;
   border-radius: 8px !important;
   border: .1rem solid var(--secondaryCol) !important;
   margin-bottom: 20px;
-  color: white;
+  color: var(--textCol1);
 }
 .contact-message {
-  background-color: rgba(255,255,255, 0.04);
+  background-color: var(--engineeringCard);
   max-width: 100%;
   border-radius: 8px !important;
   border: .1rem solid var(--secondaryCol) !important;
   margin-bottom: 20px;
-  color: white;
+  color: var(--textCol1);
 }
 .contact-submit {
   background-color: transparent !important;
@@ -216,23 +228,21 @@ li::marker {
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
-
 }
 .contact-submit:hover{
   background-color: var(--secondaryCol) !important;
-  color: black !important;
-  border: 5px solid white;
+  color: var(--primaryCol) !important;
+  border: 5px solid var(--textCol1);
   /* Transition Stuff */
   box-shadow: inset 400px 0 0 0 var(--secondaryCol);
   transition: ease-out 0.5s;
-
 }
 .contact-recieved {
   font-size: 16px;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
   margin-top: 10px;
-  color: white;
+  color: var(--textCol1);
   opacity:0;
   animation: smooth-appear 2s ease forwards;
 }
@@ -240,7 +250,7 @@ li::marker {
   color: var(--secondaryCol) !important;
 }
 .contact-project-link:hover {
-  color: white !important;
+  color: var(--textCol1) !important;
 }
 
 /* Engineering Page */
@@ -259,7 +269,8 @@ li::marker {
 }
 .engineering-entry {
   max-width: 30rem !important;
-  background-color: rgba(255,255,255, 0.04);
+  /* background-color: rgba(255,255,255, 0.04); */
+  background-color: var(--engineeringCard);
   border-radius: 20px;
   padding: 0 !important;
   margin-bottom: 2rem;
@@ -267,11 +278,10 @@ li::marker {
   margin-right: 1rem;
 }
 .engineering-entry:hover {
-  background-color: rgba(45,199,255, 0.1);
+  background-color: var(--engineeringCard-hover);
   transition: 300ms;
   /* animation: skeleton-loading 1s linear infinite alternate; */
 }
-
 .engineering-entry-content {
   margin-left: 20px;
   margin-right: 20px;
@@ -321,7 +331,7 @@ a, a:hover, a:focus, a:active {
 .engineering-skill {
   font-size: 1rem;
   color: var(--secondaryCol);
-  background-color: rgba(45,199,255, 0.1);
+  background-color: var(--engineeringSkill);
   border-radius: 9999px;
   border-width: 3px;
   padding-left: 15px;
@@ -419,7 +429,7 @@ a, a:hover, a:focus, a:active {
   border-radius: 20px;
   padding: 10px;
   border-color: var(--secondaryCol);
-  background-color: rgba(255,255,255, 0.04);
+  background-color: var(--engineeringCard);
   animation: simmer-loading 1s linear infinite alternate;
 }
 @keyframes project-loading-animation {
@@ -429,6 +439,91 @@ a, a:hover, a:focus, a:active {
   100% {
     background-color: hsl(200, 20%, 95%);
   }
+}
+
+/*Model Page*/
+.model-format {
+  margin: auto;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5vw;
+  opacity:0;
+  animation: smooth-appear 1s ease forwards;
+}
+.model-row {
+  justify-content: center;
+}
+.model-image-container {
+  position: relative; 
+}
+.model-image {
+  width: 30rem !important;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+.model-image:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+  pointer-events: auto;
+}
+
+/* .model-image-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 30rem;
+  height: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+  pointer-events: none; 
+}
+
+.model-image-container:hover .model-image-overlay{
+  opacity: 1; 
+  pointer-events: auto;
+} */
+
+.image-container {
+  position: relative;
+}
+
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.image-container:hover .image-text {
+  display: block;
+}
+
+
+/* #close[title]:hover:after {
+  color: red;
+  content: attr(title);
+  position: absolute;
+  left: 50px;
+} */
+.model-measurements {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.model-line {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  color: black;
 }
 
 /* Travel */
@@ -472,7 +567,7 @@ a, a:hover, a:focus, a:active {
 }
 .nav-hamburger:hover {
   transition: 300ms;
-  background-color: rgba(45,199,255, 0.1);
+  background-color: var(--engineeringSkill);
 }
 .navElements {
   justify-content: end;
@@ -507,7 +602,7 @@ a, a:hover, a:focus, a:active {
 }
 .navButton:hover {
   background-color: var(--secondaryCol) !important;
-  color: black !important;
+  color: var(--primaryCol) !important;
   border: 5px solid white;
   /* Transition Stuff */
   box-shadow: inset 400px 0 0 0 var(--secondaryCol);

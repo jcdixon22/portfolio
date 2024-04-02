@@ -150,7 +150,7 @@
             "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_1.png?raw=true",
             "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_2.png?raw=true"
         ],
-        "address": "/tissue"
+        "address": "/bluetooth"
     },
     "shutter": {
         "title" : "Python-Operated Laser Optics Shutter",

@@ -24,6 +24,7 @@ import BikePage from './pages/BikePage.js';
 import ContactPage from './pages/ContactPage.js';
 import AthleticsPage from './pages/AthleticsPage.js';
 import TravelPage from './pages/TravelPage.js';
+import ModellingPage from './pages/ModellingPage.js';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <BrowserRouter>
           <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/modelling" element={<ModellingPage />} />
               <Route path="engineering" element={<EngineeringPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />

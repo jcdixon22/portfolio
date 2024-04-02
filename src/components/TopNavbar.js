@@ -18,11 +18,17 @@ function TopNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-hamburger'/>
         <Navbar.Collapse id="responsive-navbar-nav" className='navElements navbar-light'>
           <Nav className="navVertAlign">
-            <Nav.Link href="engineering">
+            <Nav.Link href="/engineering">
               <div className='navElement'>
                 Engineering
               </div>
             </Nav.Link>
+            <Nav.Link href="/modelling">
+              <div className='navElement'>
+                Modelling
+              </div>
+            </Nav.Link>
+
             <Nav.Link href="/contact">
               <Button className='navButton'>Get in Touch</Button>
             </Nav.Link>
