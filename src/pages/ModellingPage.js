@@ -9,11 +9,11 @@ function ModellingPage() {
 
     return(
         <div className='model-format'>
-            <Row className='model-row mx-auto debug'>
+            <Row className='model-row mx-auto'>
                 {images.map((index) => (
                         <div
                             key={index}
-                            className="image-container debug"
+                            className="image-container"
                         >
                             <img 
                             onMouseEnter={() => setHoveredIndex(index)} // Set hovered index on mouse enter

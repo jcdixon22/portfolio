@@ -1,42 +1,27 @@
 {
     "1" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_2.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
+        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/nyc.jpg?raw=true",
+        "location": "Brooklyn",
+        "date": "January 2023"
     },
     "2" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_3.png?raw=true",
-        "location": "Mexico",
-        "date": "March 2023"
+        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/newport.jpg?raw=true",
+        "location": "Newport Beach",
+        "date": "March 2022"
     },
     "3" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "China",
-        "date": "March 2023"
+        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/palo_alto.jpg?raw=true",
+        "location": "Palo Alto",
+        "date": "April 2023"
     },
     "4" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
+        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/sutro.jpg?raw=true",
+        "location": "San Francisco",
+        "date": "May 2023"
     },
     "5" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
-    },
-    "6" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
-    },
-    "7" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
-    },
-    "8" : {
-        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
-        "location": "Palo Alto",
-        "date": "March 2023"
+        "picture": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tel_aviv.JPG?raw=true",
+        "location": "Tel Aviv",
+        "date": "October 2022"
     }
 }
