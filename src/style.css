@@ -457,20 +457,30 @@ a, a:hover, a:focus, a:active {
 }
 .model-row {
   justify-content: center;
+  max-width: 800px !important;
 }
 .model-image-container {
-  position: relative; 
+  position: relative;
 }
 .model-image {
-  width: 30rem !important;
+  width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  object-fit: contain;
   margin: 1rem;
-  margin-bottom: 2rem;
+  transition: all 300ms ease-in-out;
 }
-.model-image:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: 300ms;
+.model-image:hover{
+  filter:
+    brightness(35%);
   pointer-events: auto;
 }
+.model-image:active {
+  filter:
+    brightness(35%);
+  pointer-events: auto;
+}
+
 .image-container {
   position: relative;
 }

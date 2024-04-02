@@ -9,20 +9,20 @@ function ModellingPage() {
 
     return(
         <div className='model-format'>
-            <Row className='model-row mx-auto'>
+            <Row className='model-row mx-auto debug'>
                 {images.map((index) => (
                         <div
                             key={index}
                             className="image-container debug"
-                            
                         >
                             <img 
                             onMouseEnter={() => setHoveredIndex(index)} // Set hovered index on mouse enter
                             onMouseLeave={() => setHoveredIndex(null)} // Reset hovered index on mouse leave
-                            className="model-image debug" src={modelData[index].picture} alt={modelData[index].location} />
+                            className="model-image mx-auto" src={modelData[index].picture} alt={modelData[index].location} />
                             {hoveredIndex === index && ( // Show text only if hoveredIndex matches the current index
                                 <div className="image-text">
-                                    {modelData[index].location}
+                                    {modelData[index].location}<br></br>
+                                    {modelData[index].date}
                                 </div>
                             )}
                         </div>
