@@ -11,6 +11,7 @@
   --engineeringCard: #ffffff0a;
   --engineeringCard-hover: #ffffff1a;
   --engineeringSkill: #2dc7ff1a;
+  --headshotCol: #2DC7FF;
 } */
 
 :root {
@@ -23,6 +24,7 @@
   --engineeringCard: #eaeaea;
   --engineeringCard-hover: #2dc7ff1a;
   --engineeringSkill: #2dc7ff3a;
+  --headshotCol: #2DC7FF;
 }
 
 /* Base Stuff*/
@@ -145,7 +147,7 @@ li::marker {
   border-radius: 9999px;
   border-style: solid;
   border-width: 5px;
-  border-color: var(--secondaryCol);
+  border-color: var(--headshotCol);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -517,6 +519,7 @@ a, a:hover, a:focus, a:active {
 .model-measurements {
   display: inline-block;
   margin-bottom: 1rem;
+  
 }
 .model-line {
   margin: auto;
