@@ -512,21 +512,24 @@ a, a:hover, a:focus, a:active {
 }
 
 .model-measurements {
+  min-height:5rem;
   width: auto;
-  height: 5rem;
+  height: auto;
   position: fixed;
   left: 0px;
   right: 0px;
   bottom: 0;
+  padding-left: 10vw;
+  padding-right: 10vw;
   color: var(--textCol1);
   background-color: var(--primaryCol);
   /* box-shadow: 0 0 20px 20px var(--primaryCol); */
 }
 .model-line {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 30rem;
+  width: 30vw;
   color: var(--textCol1);
 }
 
