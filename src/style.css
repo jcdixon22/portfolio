@@ -25,7 +25,7 @@
   --engineeringCard-hover: #2dc7ff1a;
   --engineeringSkill: #2dc7ff3a;
   --headshotCol: #2DC7FF;
-  --hamburgerCol: #eaeaea;
+  --hamburgerCol: #ebebeb;
 }
 
 /* Base Stuff*/
@@ -147,9 +147,10 @@ li::marker {
   /* width:300px;
   height:300px; */
   border-radius: 9999px;
-  border-style: solid;
+  /* border-style: solid;
   border-width: 5px;
-  border-color: var(--headshotCol);
+  border-color: var(--headshotCol); */
+  background-color: var(--secondaryCol);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -569,7 +570,9 @@ a, a:hover, a:focus, a:active {
   color: var(--secondaryCol);
 }
 .nav-hamburger{
+  margin-right: 4.5vw;
   background-color: var(--hamburgerCol) !important;
+
   transition: all 300ms ease-in-out;
 }
 .nav-hamburger:hover {
