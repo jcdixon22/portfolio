@@ -21,7 +21,7 @@ function TopNavbar() {
 
     return (
       <Navbar collapseOnSelect expand="sm" data-bs-theme="dark">
-        <Nav className='navlogo'>
+        <Nav className='navLogo'>
           <Nav.Link href="/">
             <div className='navName'>
               <b>Justice Dixon</b>

@@ -147,10 +147,10 @@ li::marker {
   /* width:300px;
   height:300px; */
   border-radius: 9999px;
-  /* border-style: solid;
+  border-style: solid;
   border-width: 5px;
-  border-color: var(--headshotCol); */
-  background-color: var(--secondaryCol);
+  border-color: var(--headshotCol);
+  /* background-color: var(--secondaryCol); */
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -558,12 +558,14 @@ a, a:hover, a:focus, a:active {
 .navVertAlign {
   align-items: center;
 }
+.navLogo {
+  margin-left: 4.5vw;
+  margin-right: 2rem;
+}
 .navName {
   color: var(--textCol1);
   font-family: var(--fontPrimary);
   font-size: 25px;
-  margin-left: 4.5vw;
-  margin-right: 2rem;
   transition: ease-in-out 300ms;
 }
 .navName:hover {
