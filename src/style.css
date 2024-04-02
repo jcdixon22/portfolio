@@ -451,6 +451,7 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
   text-align: center;
   margin-top: 5vw;
+  margin-bottom: 5rem;
   opacity:0;
   animation: smooth-appear 1s ease forwards;
 }
@@ -466,33 +467,13 @@ a, a:hover, a:focus, a:active {
   margin-bottom: 2rem;
 }
 .model-image:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: 300ms;
   pointer-events: auto;
 }
-
-/* .model-image-overlay {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  width: 30rem;
-  height: auto; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  opacity: 0; 
-  transition: opacity 0.5s ease-in-out; 
-  pointer-events: none; 
-}
-
-.model-image-container:hover .model-image-overlay{
-  opacity: 1; 
-  pointer-events: auto;
-} */
-
 .image-container {
   position: relative;
 }
-
-
 .image-text {
   position: absolute;
   top: 50%;
@@ -509,7 +490,6 @@ a, a:hover, a:focus, a:active {
   display: block;
 }
 
-
 /* #close[title]:hover:after {
   color: red;
   content: attr(title);
@@ -517,9 +497,14 @@ a, a:hover, a:focus, a:active {
   left: 50px;
 } */
 .model-measurements {
-  display: inline-block;
-  margin-bottom: 1rem;
-  
+  width: auto;
+  height: 5rem;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background-color: var(--primaryCol);
+  box-shadow: 0 0 5px 10px var(--primaryCol);
 }
 .model-line {
   margin: auto;
