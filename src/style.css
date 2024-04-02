@@ -519,6 +519,7 @@ a, a:hover, a:focus, a:active {
   left: 0px;
   right: 0px;
   bottom: 0;
+  font-size: min(12px,3vw);
   padding-left: 10vw;
   padding-right: 10vw;
   color: var(--textCol1);
