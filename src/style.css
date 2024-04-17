@@ -53,7 +53,7 @@ li::marker {
   font-size: 1.2em;
 }
 .App-background {
-  background-color: var(--primaryCol);
+  background-color: var(--primaryCol) !important;
   min-height: 100vh;
   }
 .engineering-loading-animation {

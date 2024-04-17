@@ -21,11 +21,11 @@ function TopNavbar() {
                 Engineering
               </div>
             </Nav.Link>
-            {/* <Nav.Link href="/modelling">
+            <Nav.Link href="/modelling">
               <div className='navElement'>
                 Modelling
               </div>
-            </Nav.Link> */}
+            </Nav.Link>
 
             <Nav.Link href="/contact">
               <Button className='navButton'>Get in Touch</Button>
