@@ -4,7 +4,7 @@ import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
 import projectData from '../project_data.json'
 
 const ProjectComponent = ({project}) => {
-    const {title, skills, start_date, end_date, objectives, cover_image,address} = project;
+    const {title, skills, start_date, end_date, objectives, cover_image, address} = project;
 
     return (
         <a className= "engineering-entry" href={address}>
