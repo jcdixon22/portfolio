@@ -34,7 +34,7 @@ function App() {
         <BrowserRouter>
           <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/modelling" element={<ModellingPage />} />
+              <Route path="/modeling" element={<ModellingPage />} />
               <Route path="engineering" element={<EngineeringPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/portfolio" element={<PortfolioPage />} />
