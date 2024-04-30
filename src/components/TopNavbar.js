@@ -36,7 +36,7 @@ function TopNavbar() {
                 Engineering
               </div>
             </Nav.Link>
-            <Nav.Link href="/modelling">
+            <Nav.Link href="/modeling">
               <div className='navElement'>
                 Modeling
               </div>
