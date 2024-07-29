@@ -15,8 +15,8 @@
     "celoxis": {
         "title" : "Extract, Transform, Load (ETL) Program",
         "skills" : ["Python", "Pandas", "APIs", "Data Science"],
-        "start_date" : "Feb 2020",
-        "end_date" : "Apr 2020",
+        "start_date" : "Feb 2023",
+        "end_date" : "Apr 2023",
         "company": "PA Consulting",
         "objectives": ["Transfer client project data between databases",
                         "Automatically re-format and transform data to ensure compatability"
@@ -31,8 +31,8 @@
     "labjack": {
         "title" : "Low-code Data Acquisition Solution",
         "skills" : ["Python", "APIs", "Data Acquisition", "Circuits"],
-        "start_date" : "Jul 2020",
-        "end_date" : "Aug 2020",
+        "start_date" : "Jul 2023",
+        "end_date" : "Aug 2023",
         "company": "PA Consulting",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services",
                         "Ensure that users can easily and securely join and donate to organization",
@@ -155,12 +155,13 @@
     "shutter": {
         "title" : "Python-Operated Laser Optics Shutter",
         "skills" : ["Python", "SOLIDWORKS", "MATLAB","EAGLE"],
-        "start_date" : "Oct 2017",
-        "end_date" : "Dec 2017",
+        "start_date" : "Jun 2017",
+        "end_date" : "Aug 2017",
         "company": "Princeton University",
-        "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app",
-                        "The application must pair and communicate with the device via Bluetooth",
-                        "The device must be light and compact enough to attach to a dormitory door"],
+        "objectives": ["Develop a mechanical shutter to pulse laser light at Erbium atoms",
+                        "Shutter system must cost <$50 while matching the performance of +$300 shutters",
+                        "Design a mechanical shutter (SolidWorks) and an accompanying PCB (EAGLE)",
+                        "Write a script to operate the shutter (Python and script to analyze data (MATLAB)"],
         "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_1.png?raw=true",
         "images": [
             "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_1.png?raw=true",
