@@ -10,7 +10,6 @@ import palo_alto_3 from '../model_images/palo_alto_3.jpg';
 import palo_alto_4 from '../model_images/palo_alto_4.jpg';
 import palo_alto_5 from '../model_images/palo_alto_5.jpg';
 import palo_alto_6 from '../model_images/palo_alto_6.jpg';
-import palo_alto_7 from '../model_images/palo_alto_7.jpg';
 import sutro_1 from '../model_images/sutro_1.jpg';
 import sutro_2 from '../model_images/sutro_2.jpg';
 import sutro_3 from '../model_images/sutro_3.jpg';
@@ -52,40 +51,31 @@ function ModellingPage() {
                     </div>
                 ))} */}
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={newport}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={nyc}/>
-                </div>
-                <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_1}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_2}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_3}/>
                 </div>
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_4}/>
+                    <img className="model-image mx-auto" src={nyc}/>
+                </div>
+                <div className="model-image-container">
+                    <img className="model-image mx-auto" src={newport}/>
+                </div>
+                <div className="model-image-container">
+                    <img className="model-image mx-auto" src={sutro_3}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_5}/>
                 </div>
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_6}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_7}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_1}/>
-                </div>
-                <div className="model-image-container">
                     <img className="model-image mx-auto" src={sutro_2}/>
                 </div>
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_3}/>
+                    <img className="model-image mx-auto" src={palo_alto_6}/>
+                </div>
+                <div className="model-image-container">
+                    <img className="model-image mx-auto" src={palo_alto_5}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={tel_aviv}/>
