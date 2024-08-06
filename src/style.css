@@ -453,7 +453,7 @@ a, a:hover, a:focus, a:active {
   margin-right: 10vw;
   justify-content: center;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 2vw;
   margin-bottom: 5rem;
   opacity:0;
   animation: smooth-appear 1s ease forwards;
