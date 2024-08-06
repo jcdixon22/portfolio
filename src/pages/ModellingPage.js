@@ -63,10 +63,10 @@ function ModellingPage() {
                     <img className="model-image mx-auto" src={newport}/>
                 </div>
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_3}/>
+                    <img className="model-image mx-auto" src={sutro_2}/>
                 </div>
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_2}/>
+                    <img className="model-image mx-auto" src={sutro_3}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_4}/>
