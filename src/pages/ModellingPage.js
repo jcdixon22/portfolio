@@ -58,6 +58,9 @@ function ModellingPage() {
                     <img className="model-image mx-auto" src={palo_alto_1}/>
                 </div>
                 <div className="model-image-container">
+                    <img className="model-image mx-auto" src={palo_alto_4}/>
+                </div>
+                <div className="model-image-container">
                     <img className="model-image mx-auto" src={spain}/>
                 </div>
                 <div className="model-image-container">
@@ -74,9 +77,6 @@ function ModellingPage() {
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_5}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_4}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_6}/>
