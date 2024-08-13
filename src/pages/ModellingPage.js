@@ -17,6 +17,7 @@ import tel_aviv from '../model_images/tel_aviv.jpg';
 import spain from '../model_images/spain.jpg';
 import running from '../model_images/running_1.jpg';
 import surfing from '../model_images/surfing.jpg';
+import spain2 from '../model_images/full profile.jpg';
 
 function ModellingPage() {
     const [hoveredIndex, setHoveredIndex] = useState(null); // State to track hovered image index
@@ -54,7 +55,7 @@ function ModellingPage() {
                     </div>
                 ))} */}
                 <div className="model-image-container">
-                    <img className="model-image mx-auto" src={spain}/>
+                    <img className="model-image mx-auto" src={spain2}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_3}/>
