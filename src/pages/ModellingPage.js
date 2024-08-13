@@ -15,7 +15,7 @@ import sutro_2 from '../model_images/sutro_2.jpg';
 import sutro_3 from '../model_images/sutro_3.jpg';
 import tel_aviv from '../model_images/tel_aviv.jpg';
 import spain from '../model_images/spain.jpg';
-import running from '../model_images/running_1.jpg';
+import running from '../model_images/running_1.JPG';
 import surfing from '../model_images/surfing.jpg';
 import spain2 from '../model_images/full profile.jpg';
 
