@@ -16,16 +16,6 @@ function ProjectPage({project}) {
                     <div className='project-info'>{company}</div>
                 </div>
             <div className='project-pill mx-auto'>
-                <div className="project-pill-skills">
-                    <div className='project-subtitle'>
-                        Key Skills
-                    </div>
-                    <ul className='project-text'>
-                        {skills.map((skill, index) => (
-                            <li key={index}>{skill}</li>
-                        ))}
-                    </ul>
-                </div>
                 <div className="project-pill-objectives">
                     <div className='project-subtitle'>
                         Objectives
@@ -33,6 +23,16 @@ function ProjectPage({project}) {
                     <ul className='project-text'>
                         {objectives.map((objective, index) => (
                             <li key={index}>{objective}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="project-pill-skills">
+                    <div className='project-subtitle'>
+                        Key Skills
+                    </div>
+                    <ul className='project-text'>
+                        {skills.map((skill, index) => (
+                            <li key={index}>{skill}</li>
                         ))}
                     </ul>
                 </div>
