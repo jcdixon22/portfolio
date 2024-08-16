@@ -15,32 +15,28 @@ function ProjectPage({project}) {
                     <div className='project-info'>   •   </div>
                     <div className='project-info'>{company}</div>
                 </div>
-            <Row className='project-pill mx-auto'>
-                    <Col>
-                        <div>
-                            <div className='project-subtitle'>
-                                Objectives
-                            </div>
-                            <ul className='project-text'>
-                                {objectives.map((objective, index) => (
-                                    <li key={index}>{objective}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div>
-                            <div className='project-subtitle'>
-                                Key Skills
-                            </div>
-                            <ul className='project-text'>
-                                {skills.map((skill, index) => (
-                                    <li key={index}>{skill}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </Col>
-            </Row>
+            <div className='project-pill mx-auto'>
+                <div className="project-pill-skills">
+                    <div className='project-subtitle'>
+                        Key Skills
+                    </div>
+                    <ul className='project-text'>
+                        {skills.map((skill, index) => (
+                            <li key={index}>{skill}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="project-pill-objectives">
+                    <div className='project-subtitle'>
+                        Objectives
+                    </div>
+                    <ul className='project-text'>
+                        {objectives.map((objective, index) => (
+                            <li key={index}>{objective}</li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
             <hr className='project-line mx-auto'></hr>
             <Row className='project-image-row mx-auto'>
               {images.map((image, index) => (

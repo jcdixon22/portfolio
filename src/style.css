@@ -273,28 +273,29 @@ li::marker {
   justify-content: center;
 }
 .engineering-entry {
-  max-width: 30rem !important;
+  max-width: min(70vw,25rem) !important;
+  /* max-width: 30rem !important; */
   /* background-color: rgba(255,255,255, 0.04); */
   background-color: var(--engineeringCard);
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 0 !important;
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
   transition: all 300ms ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .engineering-entry:hover {
   background-color: var(--engineeringCard-hover);
   /* animation: skeleton-loading 1s linear infinite alternate; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .engineering-entry-content {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: min(3vw,30px);
 }
 .engineering-entry-image-container {
-  height: 20rem;
+  /* height: 20rem; */
+  height: min(40vw,15rem);
   position: relative;
   justify-content: center;
 }
@@ -310,17 +311,17 @@ li::marker {
 }
 .engineering-title {
   margin-top: 10px;
-  font-size: 1.7rem;
+  font-size: min(5vw,1.7rem);
   text-align: center;
   color: var(--textCol1);
 }
 .engineering-line {
   margin: 0.5em auto;
-  width: 90%;
-  color: white;
+  width: 80%;
+  color: black;
 }
 .engineering-goals {
-  font-size: 1rem;
+  font-size: min(3.5vw,1rem);
   text-align: start;
   color: var(--textCol2);
 }
@@ -329,12 +330,13 @@ a, a:hover, a:focus, a:active {
   color: inherit;
 }
 .engineering-skill-row {
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   padding-left:10px;
 }
 .engineering-skill {
-  font-size: 1rem;
+  font-size: min(3.5vw,1rem);;
   color: var(--secondaryCol);
   background-color: var(--engineeringSkill);
   border-radius: 9999px;
@@ -350,11 +352,11 @@ a, a:hover, a:focus, a:active {
 /* Individual Project Page */
 .project-format {
   margin: auto;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 20px;
+  margin-right: 20px;
   justify-content: center;
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 4vw;
   opacity:0;
   animation: smooth-appear 1s ease forwards;
 }
@@ -362,46 +364,53 @@ a, a:hover, a:focus, a:active {
   justify-content: center;
 }
 .project-title {
-  font-size: clamp(1rem,4.5vw,2.5rem);
+  font-size: min(6vw,2.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   text-align: center;
 }
 .project-subheader {
-  font-size: clamp(1rem,3.5vw,1.5rem);
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-top: min(2.5vw,20px);
 }
 .project-info {
-  font-size: clamp(1rem,3.5vw,1.5rem);
+  font-size: min(4vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
   display: inline;
 }
 .project-subtitle {
-  font-size: clamp(1rem,3.5vw,1.5rem);
+  font-size: min(4vw,1.5rem);
   color: var(--secondaryCol);
   font-family: var(--fontPrimary);
-  text-align: center;
+  text-align: start;
   font-weight: bold;
 }
 .project-text {
-  /* font-size: 1vw; */
-  font-size: clamp(0.5rem,2vw,1rem);
+  font-size: min(3vw,1rem);
   text-align: start;
   color: var(--textCol2);
   font-family: var(--fontPrimary);
   margin-top: 5px;
 }
 .project-pill{
-  /* border: 3px solid;
-  border-radius: 20px;
-  border-color: var(--secondaryCol);
-  padding: 10px; */
-  
-  padding-top: 20px;
-  padding-bottom: 2px;
-  max-width: 60rem;
+  padding-top: min(2.5vw,20px);
+  max-width: 1100px;
+  justify-content: space-between;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-pill-objectives {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+.project-pill-skills {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
 }
 .project-line {
   color: var(--secondaryCol);
@@ -419,10 +428,11 @@ a, a:hover, a:focus, a:active {
   /* min-height: 300px; */
   object-fit: contain;
   margin-bottom: 2rem;
-  border: 2px solid;
-  border-radius: 20px;
+  /* border: 2px solid;
+  border-radius: 20px; */
   padding: 0 !important;
   border-color: var(--secondaryCol);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .project-loading-animation {
   justify-content: center;
