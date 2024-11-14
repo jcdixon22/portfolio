@@ -60,9 +60,9 @@ function ModellingPage() {
                         )}
                     </div>
                 ))} */}
-                <div className="model-image-container">
+                {/* <div className="model-image-container">
                     <img className="model-image mx-auto" src={spain}/>
-                </div>
+                </div> */}
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={new_palo}/>
                 </div>

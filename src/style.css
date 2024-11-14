@@ -267,8 +267,8 @@ li::marker {
 /* Engineering Page */
 .engineering-format {
   margin: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15px;
+  margin-right: 15px;
   justify-content: center;
   text-align: center;
   margin-top: 5vw;
@@ -466,8 +466,8 @@ a, a:hover, a:focus, a:active {
 /*Model Page*/
 .model-format {
   margin: auto;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: 15px;
+  margin-right: 15px;
   justify-content: center;
   text-align: center;
   margin-top: 2vw;
@@ -499,7 +499,7 @@ a, a:hover, a:focus, a:active {
 
 .model-image-container {
   position: relative;
-  margin: 2rem;
+  margin: 5px 0;
   padding: 0 !important;
 }
 .model-image-text {
@@ -650,6 +650,8 @@ a, a:hover, a:focus, a:active {
     font-family: var(--fontPrimary);
     margin-bottom: 20px;
     transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 500px !important;
 }
 
 .agency-portfolio-button:hover {
