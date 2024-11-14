@@ -1,11 +1,10 @@
     {"portfolio": {
-        "title" : "ReactJS Portfolio Website (In-Progess)",
+        "title" : "ReactJS Portfolio Website",
         "skills" : ["React", "HTML", "CSS", "Javascript"],
         "start_date" : "Dec 2023",
         "end_date" : "Ongoing",
         "company": "Personal Project",
-        "objectives": ["Convert engineering portfolio into a reactive website",
-                        "Feature development for this site is still ongoing"
+        "objectives": ["Convert engineering portfolio into a reactive website"
                     ],
         "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
         "images": [

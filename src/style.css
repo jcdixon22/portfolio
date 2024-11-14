@@ -131,11 +131,17 @@ li::marker {
 }
 
 .home-col2 {
-  /* width: 50% !important; */
   min-width: 400px !important;
   height: 350px;
   align-content: center;
 }
+
+@media (max-width: 991px) {
+  .home-col2 {
+    text-align: center;
+  }
+}
+
 .home-col1 {
   /* width: 50% !important; */
   height: 350px;
@@ -633,4 +639,20 @@ a, a:hover, a:focus, a:active {
   /* Transition Stuff */
   box-shadow: inset 400px 0 0 0 var(--secondaryCol);
   transition: ease-out 0.5s;
+}
+
+.agency-portfolio-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--fontPrimary);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.agency-portfolio-button:hover {
+    background-color: #666666;
+    cursor: pointer;
 }

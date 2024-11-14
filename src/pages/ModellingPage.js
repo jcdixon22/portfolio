@@ -17,6 +17,7 @@ import tel_aviv from '../model_images/tel_aviv.jpg';
 import spain from '../model_images/spain.png';
 import running from '../model_images/running_1.png';
 import surfing from '../model_images/surfing.png';
+import new_palo from '../model_images/new_palo.jpg';
 // import spain2 from '../model_images/full profile.jpg';
 
 function ModellingPage() {
@@ -37,6 +38,11 @@ function ModellingPage() {
 
     return (
         <div className='model-format'>
+            <a href="https://www.raeagency.com/men/justice-dixon" target="_blank" rel="noopener noreferrer">
+                <button className="agency-portfolio-button">
+                    View agency portfolio
+                </button>
+            </a>
             <Row className='model-row mx-auto'>
                 {/* {images.map((index) => (
                     <div
@@ -56,6 +62,9 @@ function ModellingPage() {
                 ))} */}
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={spain}/>
+                </div>
+                <div className="model-image-container">
+                    <img className="model-image mx-auto" src={new_palo}/>
                 </div>
                 <div className="model-image-container">
                     <img className="model-image mx-auto" src={palo_alto_3}/>
