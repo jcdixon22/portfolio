@@ -486,16 +486,24 @@ a, a:hover, a:focus, a:active {
   object-fit: contain;
   transition: all 300ms ease-in-out;
 }
-/* .model-image:hover{
-  filter:
-    brightness(35%);
-  pointer-events: auto;
+
+.image-loading {
+  opacity: 0;
+  visibility: hidden;
 }
-.model-image:active {
-  filter:
-    brightness(35%);
-  pointer-events: auto;
-} */
+
+.image-loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
+.model-loading-animation {
+  width: 100%;
+  height: 300px;
+  background-color: var(--engineeringCard);
+  animation: simmer-loading 1s linear infinite alternate;
+  margin-bottom: 2rem;
+}
 
 .model-image-container {
   position: relative;

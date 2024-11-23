@@ -17,12 +17,12 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(form.current);
-    // emailjs.sendForm('service_hcdk96x', 'template_j6y0g9o', form.current, '7C_pkEcud8D_XGfqr')
-    //   .then((result) => {
-    //       console.log(result.text);
-    //   }, (error) => {
-    //       console.log(error.text);
-    //   });
+    emailjs.sendForm('service_hcdk96x', 'template_j6y0g9o', form.current, '7C_pkEcud8D_XGfqr')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
 
   // Functions to adjust message box height dynamically

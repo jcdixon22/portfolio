@@ -21,20 +21,26 @@ import new_palo from '../model_images/new_palo.jpg';
 // import spain2 from '../model_images/full profile.jpg';
 
 function ModellingPage() {
-    const [hoveredIndex, setHoveredIndex] = useState(null); // State to track hovered image index
-    const [isTextVisible, setIsTextVisible] = useState(false); // State to track text visibility
+    const [imagesLoaded, setImagesLoaded] = useState({});
 
-    const images = Object.keys(modelData);
-
-    const handleMouseEnter = (index) => {
-        setHoveredIndex(index);
-        setIsTextVisible(true);
+    const handleImageLoad = (id) => {
+        setImagesLoaded(prev => ({...prev, [id]: true}));
     };
 
-    const handleMouseLeave = () => {
-        setHoveredIndex(null);
-        setIsTextVisible(false);
-    };
+    const modelImages = [
+        { id: 'new_palo', src: new_palo },
+        { id: 'palo_alto_3', src: palo_alto_3 },
+        { id: 'palo_alto_1', src: palo_alto_1 },
+        { id: 'surfing', src: surfing },
+        { id: 'nyc', src: nyc },
+        { id: 'newport', src: newport },
+        { id: 'sutro_1', src: sutro_1 },
+        { id: 'sutro_2', src: sutro_2 },
+        { id: 'running', src: running },
+        { id: 'palo_alto_5', src: palo_alto_5 },
+        { id: 'palo_alto_6', src: palo_alto_6 },
+        { id: 'tel_aviv', src: tel_aviv }
+    ];
 
     return (
         <div className='model-format'>
@@ -44,63 +50,18 @@ function ModellingPage() {
                 </button>
             </a>
             <Row className='model-row mx-auto'>
-                {/* {images.map((index) => (
-                    <div
-                        key={index}
-                        className="model-image-container"
-                        onMouseEnter={() => handleMouseEnter(index)} // Set hovered index on mouse enter
-                        onMouseLeave={handleMouseLeave} // Reset hovered index on mouse leave
-                    >
-                        <img className="model-image mx-auto" src={modelData[index].picture} alt={modelData[index].location} />
-                        {hoveredIndex === index && isTextVisible && ( // Show text only if hoveredIndex matches the current index and isTextVisible is true
-                            <div className="model-image-text">
-                                {modelData[index].location}<br></br>
-                                {modelData[index].date}
-                            </div>
-                        )}
+                {modelImages.map(({ id, src }) => (
+                    <div key={id} className="model-image-container">
+                        {!imagesLoaded[id] && <div className="model-loading-animation" />}
+                        <img 
+                            className={`model-image mx-auto ${imagesLoaded[id] ? 'image-loaded' : 'image-loading'}`}
+                            src={src} 
+                            alt={id}
+                            loading="lazy"
+                            onLoad={() => handleImageLoad(id)}
+                        />
                     </div>
-                ))} */}
-                {/* <div className="model-image-container">
-                    <img className="model-image mx-auto" src={spain}/>
-                </div> */}
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={new_palo}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_3}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_1}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={surfing}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={nyc}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={newport}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_1}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={sutro_2}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={running}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_5}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={palo_alto_6}/>
-                </div>
-                <div className="model-image-container">
-                    <img className="model-image mx-auto" src={tel_aviv}/>
-                </div>
-
-
+                ))}
             </Row>
             <div className='model-measurements'>
                 <hr className='model-line' />
