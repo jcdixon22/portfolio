@@ -16,12 +16,13 @@ function ContactForm() {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current);
-    emailjs.sendForm('service_hcdk96x', 'template_j6y0g9o', form.current, '7C_pkEcud8D_XGfqr')
+    emailjs.sendForm('service_hcdk96x', 'template_ilhnfi1', form.current, '7C_pkEcud8D_XGfqr')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        setSubmitted(true);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
+        alert('Failed to send message. Please try again later.');
       });
   };
 
@@ -40,9 +41,9 @@ function ContactForm() {
         {!submitted && (
             <form className='contact-row' ref={form} onSubmit={handleSubmit}>
             <label className='contact-header'>Name</label>
-            <input className='contact-general' required type="text" name="user_name" />
+            <input className='contact-general' required type="text" name="from_name" />
             <label className='contact-header'>Email</label>
-            <input className='contact-general' required type="email" name="user_email" />
+            <input className='contact-general' required type="email" name="reply_to" />
             <label className='contact-header'>Message</label>
             <textarea 
                 value={message}
