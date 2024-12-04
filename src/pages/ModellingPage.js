@@ -18,6 +18,9 @@ import spain from '../model_images/spain.png';
 import running from '../model_images/running_1.png';
 import surfing from '../model_images/surfing.png';
 import new_palo from '../model_images/new_palo.jpg';
+import fitness_1 from '../model_images/fitness_1.jpg';
+import fitness_2 from '../model_images/fitness_2.jpg';
+import fitness_3 from '../model_images/fitness_3.jpg';
 // import spain2 from '../model_images/full profile.jpg';
 
 function ModellingPage() {
@@ -29,16 +32,15 @@ function ModellingPage() {
 
     const modelImages = [
         { id: 'new_palo', src: new_palo },
+        { id: 'fitness_1', src: fitness_1 },
+        { id: 'fitness_2', src: fitness_2 },
         { id: 'palo_alto_3', src: palo_alto_3 },
-        { id: 'palo_alto_1', src: palo_alto_1 },
         { id: 'surfing', src: surfing },
         { id: 'nyc', src: nyc },
         { id: 'newport', src: newport },
         { id: 'sutro_1', src: sutro_1 },
         { id: 'sutro_2', src: sutro_2 },
-        { id: 'running', src: running },
-        { id: 'palo_alto_5', src: palo_alto_5 },
-        { id: 'palo_alto_6', src: palo_alto_6 },
+        { id: 'fitness_3', src: fitness_3 },
         { id: 'tel_aviv', src: tel_aviv }
     ];
 
