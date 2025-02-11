@@ -20,7 +20,7 @@ function HomePage() {
                         <div className='text-header-big'> Hi,</div>
                         <div className='text-header-jumbo'>I'm Justice</div>
                         <div className='text-subtitle'>
-                            A product manager based in San Francisco.
+                            A founder, product manager, and model based in San Francisco.
                         </div>
                         <div className='text-subtitle'>
                             I specialize in robotics, software, and hardware.
