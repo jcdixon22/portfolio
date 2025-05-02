@@ -855,16 +855,33 @@ a:active {
 
 /*Model Page*/
 .model-format {
-  margin: var(--marginSectionVertical) var(--marginPageSide) !important;
+  margin: 0 auto !important;
+  padding: var(--marginSectionVertical) var(--marginPageSide) !important;
   max-width: var(--widthContent_MAX);
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 5rem;
   opacity: 0;
   animation: smooth-appear 1s ease forwards;
+  box-sizing: border-box;
 }
+
+.model-measurements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.model-measurement {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .model-row {
   justify-content: center;
   max-width: 500px !important;

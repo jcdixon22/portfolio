@@ -97,13 +97,15 @@ function ModellingPage() {
                 </Row>
                 
                 <hr className='model-line' />
-                <b>Height: </b> 6' 1.5"&nbsp;&nbsp;&nbsp;
-                <b>Hair: </b> Dark Brown&nbsp;&nbsp;&nbsp;
-                <b>Eyes: </b> Brown&nbsp;&nbsp;&nbsp;
-                <b>Chest: </b> 44"&nbsp;&nbsp;&nbsp;
-                <b>Waist: </b> 35"&nbsp;&nbsp;&nbsp;
-                <b>Inseam: </b> 32"&nbsp;&nbsp;&nbsp;
-                <b>Shoe: </b> 13
+                <div className="model-measurements-container">
+                    <span className="model-measurement"><b>Height: </b> 6' 1.5"</span>
+                    <span className="model-measurement"><b>Hair: </b> Dark Brown</span>
+                    <span className="model-measurement"><b>Eyes: </b> Brown</span>
+                    <span className="model-measurement"><b>Chest: </b> 44"</span>
+                    <span className="model-measurement"><b>Waist: </b> 35"</span>
+                    <span className="model-measurement"><b>Inseam: </b> 32"</span>
+                    <span className="model-measurement"><b>Shoe: </b> 13</span>
+                </div>
             </div>
         </PageWrapper>
     );
