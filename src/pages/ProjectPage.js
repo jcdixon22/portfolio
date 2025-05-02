@@ -1,49 +1,117 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import ProjectImageSkeleton from '../components/ProjectImageSkeleton';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { IoArrowBack } from 'react-icons/io5';
+import projectData from '../project_data.json';
+import PageWrapper from '../components/PageWrapper';
 
-function ProjectPage({project}) {
+function ProjectPage() {
+    const { projectId } = useParams();
+    const [isEntering, setIsEntering] = useState(true);
+    const navigate = useNavigate();
+    
+    const project = projectData[projectId];
+
+    useEffect(() => {
+        setIsEntering(true);
+    }, [projectId]);
+
+    const handleBackClick = () => {
+        setIsEntering(false);
+        setTimeout(() => {
+            navigate('/engineering');
+        }, 500);
+    };
+
+    if (!project) {
+        return <PageWrapper><div className='entry-not-found'>Project not found</div></PageWrapper>;
+    }
+
     const {title, company, skills, start_date, end_date, objectives, images} = project;
 
+    // Function to convert GitHub blob URL to raw URL
+    const getImageUrl = (url) => {
+        if (!url) return '';
+        return url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+    };
+
     return(
-        <div className='project-format'>
-            <div className='project-title'>
-                {title}
-            </div>
-            <div className='project-subheader'>
-                    <div className='project-info'>{start_date}-{end_date}</div>
-                    <div className='project-info'>   •   </div>
-                    <div className='project-info'>{company}</div>
-                </div>
-            <div className='project-pill mx-auto'>
-                <div className="project-pill-objectives">
-                    <div className='project-subtitle'>
-                        Objectives
+        <PageWrapper>
+            <div className={`entry-container ${isEntering ? 'page-enter' : 'page-exit'}`}>
+                <button 
+                    className="entry-back-button"
+                    onClick={handleBackClick}
+                >
+                    <IoArrowBack />
+                    Back to Projects
+                </button>
+                <div className='entry-hero'>
+                    <div className='entry-hero-content'>
+                        <h1 className='entry-title'>{title}</h1>
+                        <div className='entry-meta'>
+                            <span className='entry-company'>{company}</span>
+                            <span className='entry-dates'>{start_date} — {end_date}</span>
+                        </div>
                     </div>
-                    <ul className='project-text'>
-                        {objectives.map((objective, index) => (
-                            <li key={index}>{objective}</li>
-                        ))}
-                    </ul>
-                </div>
-                <div className="project-pill-skills">
-                    <div className='project-subtitle'>
-                        Key Skills
+                    <div className='entry-hero-image'>
+                        {images[0] && (
+                            <img 
+                                src={getImageUrl(images[0])} 
+                                alt={`${title} - Hero Image`}
+                                loading="eager"
+                            />
+                        )}
                     </div>
-                    <ul className='project-text'>
-                        {skills.map((skill, index) => (
-                            <li key={index}>{skill}</li>
+                </div>
+
+                <div className='entry-content'>
+                    <div className='entry-main'>
+                        <section className='entry-section'>
+                            <h2 className='entry-section-title'>Objectives</h2>
+                            <div className='entry-objectives'>
+                                {objectives.map((objective, index) => (
+                                    <div 
+                                        key={index}
+                                        className='entry-objective'
+                                    >
+                                        <span className='entry-objective-number'>{index + 1}</span>
+                                        <p>{objective}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+
+                        <section className='entry-section'>
+                            <h2 className='entry-section-title'>Skills</h2>
+                            <div className='entry-skills'>
+                                {skills.map((skill, index) => (
+                                    <span 
+                                        key={index}
+                                        className='entry-skill'
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+                    </div>
+
+                    <div className='entry-gallery'>
+                        {images.slice(1).map((image, index) => (
+                            <div 
+                                key={index}
+                                className='entry-gallery-item'
+                            >
+                                <img 
+                                    src={getImageUrl(image)} 
+                                    alt={`${title} - Image ${index + 2}`}
+                                    loading="lazy"
+                                />
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
             </div>
-            <hr className='project-line mx-auto'></hr>
-            <Row className='project-image-row mx-auto'>
-              {images.map((image, index) => (
-                    <img className="project-image" key={index} src={image}/>
-                ))}
-            </Row>
-        </div>
+        </PageWrapper>
     );
 }
 

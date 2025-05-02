@@ -1,6 +1,8 @@
 import modelData from '../model_data.json'
 import { Row } from 'react-bootstrap';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import PageWrapper from '../components/PageWrapper';
 
 import newport from '../model_images/newport.jpg';
 import nyc from '../model_images/nyc.jpg';
@@ -25,9 +27,36 @@ import fitness_3 from '../model_images/fitness_3.jpg';
 
 function ModellingPage() {
     const [imagesLoaded, setImagesLoaded] = useState({});
+    const [isEntering, setIsEntering] = useState(true);
+    const [isExiting, setIsExiting] = useState(false);
+    const navigate = useNavigate();
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        setIsEntering(true);
+    }, []);
 
     const handleImageLoad = (id) => {
         setImagesLoaded(prev => ({...prev, [id]: true}));
+    };
+
+    const handleBackClick = () => {
+        if (isExiting) return;
+        
+        setIsExiting(true);
+        const content = contentRef.current;
+        
+        // Force a reflow by getting the computed style
+        const computedStyle = window.getComputedStyle(content);
+        const opacity = computedStyle.opacity;
+        
+        // Add the exit animation class
+        content.classList.add('home-content-exit');
+        
+        // Wait for the animation to complete before navigating
+        setTimeout(() => {
+            navigate('/');
+        }, 500);
     };
 
     const modelImages = [
@@ -45,27 +74,28 @@ function ModellingPage() {
     ];
 
     return (
-        <div className='model-format'>
-            <a href="https://www.raeagency.com/men/justice-dixon" target="_blank" rel="noopener noreferrer">
-                <button className="agency-portfolio-button">
-                    View agency portfolio
-                </button>
-            </a>
-            <Row className='model-row mx-auto'>
-                {modelImages.map(({ id, src }) => (
-                    <div key={id} className="model-image-container">
-                        {!imagesLoaded[id] && <div className="model-loading-animation" />}
-                        <img 
-                            className={`model-image mx-auto ${imagesLoaded[id] ? 'image-loaded' : 'image-loading'}`}
-                            src={src} 
-                            alt={id}
-                            loading="lazy"
-                            onLoad={() => handleImageLoad(id)}
-                        />
-                    </div>
-                ))}
-            </Row>
-            <div className='model-measurements'>
+        <PageWrapper>
+            <div className={`model-format ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
+                <a href="https://www.raeagency.com/men/justice-dixon" target="_blank" rel="noopener noreferrer">
+                    <button className="agency-portfolio-button">
+                        View agency portfolio
+                    </button>
+                </a>
+                <Row className='model-row mx-auto'>
+                    {modelImages.map(({ id, src }) => (
+                        <div key={id} className="model-image-container">
+                            {!imagesLoaded[id] && <div className="model-loading-animation" />}
+                            <img 
+                                className={`model-image mx-auto ${imagesLoaded[id] ? 'image-loaded' : 'image-loading'}`}
+                                src={src} 
+                                alt={id}
+                                loading="lazy"
+                                onLoad={() => handleImageLoad(id)}
+                            />
+                        </div>
+                    ))}
+                </Row>
+                
                 <hr className='model-line' />
                 <b>Height: </b> 6' 1.5"&nbsp;&nbsp;&nbsp;
                 <b>Hair: </b> Dark Brown&nbsp;&nbsp;&nbsp;
@@ -75,7 +105,7 @@ function ModellingPage() {
                 <b>Inseam: </b> 32"&nbsp;&nbsp;&nbsp;
                 <b>Shoe: </b> 13
             </div>
-        </div>
+        </PageWrapper>
     );
 }
 

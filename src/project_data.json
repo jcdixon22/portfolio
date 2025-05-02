@@ -1,4 +1,5 @@
-    {"portfolio": {
+{
+    "portfolio": {
         "title" : "ReactJS Portfolio Website",
         "skills" : ["React", "HTML", "CSS", "Javascript"],
         "start_date" : "Dec 2023",
@@ -6,7 +7,7 @@
         "company": "Personal Project",
         "objectives": ["Convert engineering portfolio into a reactive website"
                     ],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/logo512.png?raw=true",
+        "cover_image": "/assets/logo512.png",
         "images": [
         ],
         "address": "/portfolio"
@@ -20,12 +21,12 @@
         "objectives": ["Transfer client project data between databases",
                         "Automatically re-format and transform data to ensure compatability"
                     ],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_1.png?raw=true",
+        "cover_image": "/assets/celoxis_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/celoxis_2.png?raw=true"
+            "/assets/celoxis_1.png",
+            "/assets/celoxis_2.png"
         ],
-        "address": "/datatransfer"
+        "address": "/celoxis"
     },
     "labjack": {
         "title" : "Low-code Data Acquisition Solution",
@@ -35,12 +36,12 @@
         "company": "PA Consulting",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services",
                         "Ensure that users can easily and securely join and donate to organization",
-                    "Display recent content from the organization’s social media account"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/labjack_1.jpg?raw=true",
+                    "Display recent content from the organization's social media account"],
+        "cover_image": "/assets/labjack_1.jpg",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/labjack_1.jpg?raw=true"
+            "/assets/labjack_1.jpg"
         ],
-        "address": "/daq"
+        "address": "/labjack"
     },
     "bbag": {
         "title" : "Reactive Website for a Non-Profit DEI Organization",
@@ -50,10 +51,10 @@
         "company": "Black Bolles Alumni Group",
         "objectives": ["Minimize startup expenses by developing the site without 3rd-party services",
                         "Ensure that users can easily and securely join and donate to organization",
-                    "Display recent content from the organization’s social media account"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true",
-        "images": ["https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_1.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bbag_2.png?raw=true"
+                    "Display recent content from the organization's social media account"],
+        "cover_image": "/assets/bbag_1.png",
+        "images": ["/assets/bbag_1.png",
+        "/assets/bbag_2.png"
         ],
         "address": "/bbag"
     },
@@ -66,15 +67,15 @@
         "objectives": ["Design a hand that replicates the ranges of motion of a real hand using ten motors",
                         "Map the natural DOF of the human hand to determine which DOFs are interdependent",
                     "Construct the hand and perform strength, speed, and reliability testing"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_1.png?raw=true",
-        "images": ["https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_2.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_3.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_4.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_5.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_6.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_7.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_8.png?raw=true",
-        "https://github.com/jcdixon22/portfolio/blob/main/public/assets/arm_9.png?raw=true"
+        "cover_image": "/assets/arm_1.png",
+        "images": ["/assets/arm_2.png",
+        "/assets/arm_3.png",
+        "/assets/arm_4.png",
+        "/assets/arm_5.png",
+        "/assets/arm_6.png",
+        "/assets/arm_7.png",
+        "/assets/arm_8.png",
+        "/assets/arm_9.png"
         ],
         "address": "/arm"
     },
@@ -86,13 +87,13 @@
         "company": "MicroVention-Terumo",
         "objectives": ["Develop a vacuum regulator that is compatible with any commercially sold vacuum pump and can achieve a cycle frequency of at least 5 Hz",
                         "Develop a cyclical vacuum pump system with a vacuum pressure of at least 29 inHg"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_1.png?raw=true",
+        "cover_image": "/assets/pump_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_6.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_2.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_3.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_4.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/pump_5.png?raw=true"
+            "/assets/pump_6.png",
+            "/assets/pump_2.png",
+            "/assets/pump_3.png",
+            "/assets/pump_4.png",
+            "/assets/pump_5.png"
         ],
         "address": "/pump"
     },
@@ -105,15 +106,15 @@
         "objectives": ["[Team] Build a robot that can complete all tasks in the final demonstration",
                         "[Team] Meet all intermediary deadlines and milestones",
                         "[Individual] Design the arm mechanism and collaboratively write the autonomous controls"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_1.png?raw=true",
+        "cover_image": "/assets/ssar_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_2.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_3.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_4.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_5.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_6.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/ssar_7.png?raw=true"
+            "/assets/ssar_1.png",
+            "/assets/ssar_2.png",
+            "/assets/ssar_3.png",
+            "/assets/ssar_4.png",
+            "/assets/ssar_5.png",
+            "/assets/ssar_6.png",
+            "/assets/ssar_7.png"
         ],
         "address": "/sarr"
     },
@@ -126,16 +127,16 @@
         "objectives": ["Design a novel device that measures organ tissue thickness inside the patient",
                         "The device must be operable using one hand",
                         "The device must record a thickness measurement once while maintaining 8 g/mm2 of pressure on the tissue, and only compress the tissue in increments of <0.01 mm"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_1.png?raw=true",
+        "cover_image": "/assets/tissue_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_2.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_3.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/tissue_4.png?raw=true"
+            "/assets/tissue_1.png",
+            "/assets/tissue_2.png",
+            "/assets/tissue_3.png",
+            "/assets/tissue_4.png"
         ],
         "address": "/tissue"
     },
-    "door": {
+    "bluetooth": {
         "title" : "Bluetooth-Enabled Door Opening Device & App",
         "skills" : ["Android Studios", "Java", "Arduino/C","Bluetooth"],
         "start_date" : "Oct 2017",
@@ -144,10 +145,10 @@
         "objectives": ["Create a device that opens a door when prompted by a Bluetooth-enabled app",
                         "The application must pair and communicate with the device via Bluetooth",
                         "The device must be light and compact enough to attach to a dormitory door"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_1.png?raw=true",
+        "cover_image": "/assets/door_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/door_2.png?raw=true"
+            "/assets/door_1.png",
+            "/assets/door_2.png"
         ],
         "address": "/bluetooth"
     },
@@ -161,10 +162,10 @@
                         "Shutter system must cost <$50 while matching the performance of +$300 shutters",
                         "Design a mechanical shutter (SolidWorks) and an accompanying PCB (EAGLE)",
                         "Write a script to operate the shutter (Python and script to analyze data (MATLAB)"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_1.png?raw=true",
+        "cover_image": "/assets/shutter_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/shutter_2.png?raw=true"
+            "/assets/shutter_1.png",
+            "/assets/shutter_2.png"
         ],
         "address": "/shutter"
     },
@@ -175,14 +176,14 @@
         "end_date" : "Jun 2017",
         "company": "Princeton University",
         "objectives": ["Earn machine shop certification before the end of my first semester at Princeton",
-                        "Calculate optimal gear ratio for Princeton’s worst hill incline",
+                        "Calculate optimal gear ratio for Princeton's worst hill incline",
                         "Design and fabricate apparatus to affix motor, batteries, and other components",
                         "E-bike must be water, snow, and shock proof to last four years"],
-        "cover_image": "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bike_1.png?raw=true",
+        "cover_image": "/assets/bike_1.png",
         "images": [
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bike_1.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bike_2.png?raw=true",
-            "https://github.com/jcdixon22/portfolio/blob/main/public/assets/bike_3.png?raw=true"
+            "/assets/bike_1.png",
+            "/assets/bike_2.png",
+            "/assets/bike_3.png"
         ],
         "address": "/bike"
     }

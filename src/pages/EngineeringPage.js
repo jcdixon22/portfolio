@@ -1,29 +1,55 @@
 import Row from 'react-bootstrap/Row';
 import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
+import PageWrapper from '../components/PageWrapper';
+import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import projectData from '../project_data.json'
 
-const ProjectComponent = ({project}) => {
-    const {title, skills, start_date, end_date, objectives, cover_image, address} = project;
+const ProjectComponent = ({project, onProjectClick}) => {
+    const {title, skills, cover_image, address} = project;
+    const [imageError, setImageError] = useState(false);
 
     return (
-        <a className= "engineering-entry" href={address}>
-            <div className='engineering-entry-content'>
-                <div className='engineering-entry-image-container'>
-                    <EngineeringImageSkeleton className="engineering-image" src={project.cover_image} />
-                </div>
-                <div className='engineering-title'>
-                    {title}
-                </div>
-                <hr className='engineering-line'/>
-                <ul className='engineering-goals'>
-                    {objectives.map((objective, index) => (
-                        <li key={index}>{objective}</li>
-                    ))}
-                </ul>
-                <div className='engineering-skill-row'>
+        <a 
+            className="project-entry" 
+            href={address}
+            onClick={(e) => {
+                e.preventDefault();
+                onProjectClick(address);
+            }}
+        >
+            <div className="project-entry-image-container">
+                {!imageError ? (
+                    <img 
+                        className="project-entry-image" 
+                        src={cover_image} 
+                        alt={title}
+                        loading="lazy"
+                        onError={(e) => {
+                            // Try to load from local assets if GitHub URL fails
+                            const localPath = `/assets/${cover_image.split('/').pop().split('?')[0]}`;
+                            console.log(`Trying local path: ${localPath}`);
+                            
+                            // If the original path already starts with /assets, don't retry
+                            if (!cover_image.startsWith('/assets/')) {
+                                e.target.src = localPath;
+                            } else {
+                                setImageError(true);
+                            }
+                        }}
+                    />
+                ) : (
+                    <div className="project-entry-image-placeholder">
+                        <div>{title}</div>
+                    </div>
+                )}
+            </div>
+            <div className="project-entry-content">
+                <h3 className="project-entry-title">{title}</h3>
+                <div className="project-entry-skills">
                     {skills.map((skill, index) => (
-                        <div key={index} className='engineering-skill'>{skill}</div>
+                        <span key={index} className="project-entry-skill">{skill}</span>
                     ))}
                 </div>
             </div>
@@ -32,15 +58,46 @@ const ProjectComponent = ({project}) => {
 };
 
 function EngineeringPage() {
-    const projectKeys = Object.keys(projectData);
-    return(
-        <div className='engineering-format'>
-            <Row sm={1} lg={2} className='engineering-row'>
-                {projectKeys.map((projectKey) => (
-                    <ProjectComponent key={projectKey} project={projectData[projectKey]} />
+    const [isEntering, setIsEntering] = useState(true);
+    const [isExiting, setIsExiting] = useState(false);
+    const navigate = useNavigate();
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        setIsEntering(true);
+    }, []);
+
+    const handleProjectClick = (address) => {
+        if (isExiting) return;
+        
+        setIsExiting(true);
+        const content = contentRef.current;
+        
+        // Force a reflow by getting the computed style
+        const computedStyle = window.getComputedStyle(content);
+        const opacity = computedStyle.opacity;
+        
+        // Add the exit animation class
+        content.classList.add('home-content-exit');
+        
+        // Wait for the animation to complete before navigating
+        setTimeout(() => {
+            navigate(address);
+        }, 500);
+    };
+
+    return (
+        <PageWrapper>
+            <div className={`project-entries-grid ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
+                {Object.values(projectData).map((project, index) => (
+                    <ProjectComponent 
+                        key={index} 
+                        project={project} 
+                        onProjectClick={handleProjectClick}
+                    />
                 ))}
-            </Row>
-        </div>
+            </div>
+        </PageWrapper>
     );
 }
 

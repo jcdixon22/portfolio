@@ -20,35 +20,40 @@ function TopNavbar() {
   // }, []);
 
     return (
-      <Navbar collapseOnSelect expand="sm" data-bs-theme="dark">
-        <Nav className='navLogo'>
-          <Nav.Link href="/">
-            <div className='navName'>
-              <b>Justice Dixon</b>
-            </div>
-          </Nav.Link>
-        </Nav>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-hamburger'/>
-        <Navbar.Collapse id="responsive-navbar-nav" className='navElements navbar-light'>
-          <Nav className="navVertAlign">
-            <Nav.Link href="/engineering">
-              <div className='navElement'>
-                Engineering
+      <div className="navbar-container">
+        <Navbar collapseOnSelect expand="sm" data-bs-theme="dark">
+          <Nav className='navLogo'>
+            <Nav.Link href="/">
+              <div className='navName'>
+                <b>Justice Dixon</b>
               </div>
-            </Nav.Link>
-            <Nav.Link href="/modeling">
-              <div className='navElement'>
-                Modeling
-              </div>
-            </Nav.Link>
-
-            <Nav.Link href="/contact">
-              <Button className='navButton'>Get in Touch</Button>
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-hamburger'/>
+          <Navbar.Collapse id="responsive-navbar-nav" className='navElements navbar-light'>
+            <Nav className="navVertAlign">
+              <Nav.Link href="/engineering">
+                <div className='navElement'>
+                  Engineering
+                </div>
+              </Nav.Link>
+              <Nav.Link href="/modeling">
+                <div className='navElement'>
+                  Modeling
+                </div>
+              </Nav.Link>
+              <Nav.Link href="/sports">
+                <div className='navElement'>
+                  Sports
+                </div>
+              </Nav.Link>
+              <Nav.Link href="/contact">
+                <Button className='navButton'>Get in Touch</Button>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
     );
 }
 
