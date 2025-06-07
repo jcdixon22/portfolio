@@ -34,6 +34,24 @@ function ProjectPage() {
         return url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
     };
 
+    // Function to convert www text to clickable links
+    const convertToLinks = (text) => {
+        const words = text.split(' ');
+        return words.map((word, index) => {
+            if (word.startsWith('www.')) {
+                return (
+                    <span key={index}>
+                        <a href={`https://${word}`} target="_blank" rel="noopener noreferrer">
+                            {word}
+                        </a>
+                        {' '}
+                    </span>
+                );
+            }
+            return word + ' ';
+        });
+    };
+
     return(
         <PageWrapper>
             <div className={`entry-container ${isEntering ? 'page-enter' : 'page-exit'}`}>
@@ -49,7 +67,7 @@ function ProjectPage() {
                         <h1 className='entry-title'>{title}</h1>
                         <div className='entry-meta'>
                             <span className='entry-company'>{company}</span>
-                            <span className='entry-dates'>{start_date} — {end_date}</span>
+                            {/* <span className='entry-dates'>{start_date} — {end_date}</span> */}
                         </div>
                     </div>
                     <div className='entry-hero-image'>
@@ -74,7 +92,7 @@ function ProjectPage() {
                                         className='entry-objective'
                                     >
                                         <span className='entry-objective-number'>{index + 1}</span>
-                                        <p>{objective}</p>
+                                        <p>{convertToLinks(objective)}</p>
                                     </div>
                                 ))}
                             </div>
