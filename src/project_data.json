@@ -1,21 +1,4 @@
 {
-    "athletecruit": {
-        "title": "AI College Recruiting Advisor",
-        "skills": ["React", "Node", "Puppeteer", "LLM"],
-        "start_date": "June 2025",
-        "end_date": "Ongoing",
-        "company": "Personal Project",
-        "objectives": [
-            "Check it out here: www.athletecruit.com",
-            "An AI college recruiting advisor which helps families maximize the recruiting options of high school athletes",
-            "The advisor determines which school types the student has a good chance of being recruited to, and then scans live roster performance data to find gaps that the student can fill"
-        ],
-        "cover_image": "/assets/athletecruit_1.png",
-        "images": [
-            "/assets/athletecruit_1.png"
-        ],
-        "address": "/athletecruit"
-    },
     "portfolio": {
         "title" : "ReactJS Portfolio Website",
         "skills" : ["React", "HTML", "CSS", "Javascript"],
