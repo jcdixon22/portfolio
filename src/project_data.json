@@ -1,16 +1,43 @@
 {
-    "portfolio": {
-        "title" : "ReactJS Portfolio Website",
-        "skills" : ["React", "HTML", "CSS", "Javascript"],
-        "start_date" : "Dec 2023",
-        "end_date" : "Ongoing",
+    "athletecruit": {
+        "title": "AI College Recruiting Advisor",
+        "skills": ["React", "Node", "Puppeteer", "LLM"],
+        "start_date": "June 2025",
+        "end_date": "Ongoing",
         "company": "Personal Project",
-        "objectives": ["Convert engineering portfolio into a reactive website"
-                    ],
-        "cover_image": "/assets/logo512.png",
-        "images": [
+        "objectives": [
+            "Check it out here: www.athletecruit.com",
+            "An AI college recruiting advisor which helps families maximize the recruiting options of high school athletes",
+            "The advisor determines which school types the student has a good chance of being recruited to, and then scans live roster performance data to find gaps that the student can fill"
         ],
-        "address": "/portfolio"
+        "cover_image": "/assets/athletecruit_1.png",
+
+        "images": [
+            "/assets/athletecruit_1.png",
+            "/assets/athletecruit_2.png",
+            "/assets/athletecruit_3.png",
+            "/assets/athletecruit_4.png"
+        ],
+        "address": "/athletecruit"
+    },
+    "infield": {
+        "title": "Fitness Expertise Marketplace",
+        "skills": ["React", "Node"],
+        "start_date": "October 2024",
+        "end_date": "Ongoing",
+        "company": "Personal Project",
+        "objectives": [
+            "Check it out here: www.infieldconnect.co",
+            "Platform that provides access to affordable personalized fitness expertise to anyone.",
+            "Athletes get paid to share their expertise, and fans get unprecidented access to world-class insights."
+        ],
+        "cover_image": "/assets/infield_1.png",
+        "images": [
+            "/assets/infield_1.png",
+            "/assets/infield_2.png",
+            "/assets/infield_3.png"
+        ],
+        "address": "/infield"
     },
     "celoxis": {
         "title" : "Extract, Transform, Load (ETL) Program",
