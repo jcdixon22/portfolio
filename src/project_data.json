@@ -1,4 +1,19 @@
 {
+    "stealth": {
+        "title": "AI Startup",
+        "skills": ["React", "Node", "Computer Vision", "LLM"],
+        "start_date": "August 2025",
+        "end_date": "Ongoing",
+        "company": "AI Startup",
+        "objectives": [
+            "Building something neat"
+        ],
+        "cover_image": "/assets/stealth_1.jpg",
+        "images": [
+            "/assets/stealth_1.jpg"
+        ],
+        "address": "/stealth"
+    },
     "athletecruit": {
         "title": "AI College Recruiting Advisor",
         "skills": ["React", "Node", "Puppeteer", "LLM"],
@@ -11,12 +26,12 @@
             "The advisor determines which school types the student has a good chance of being recruited to, and then scans live roster performance data to find gaps that the student can fill"
         ],
         "cover_image": "/assets/athletecruit_1.png",
-
         "images": [
             "/assets/athletecruit_1.png",
-            "/assets/athletecruit_2.png",
+            "/assets/athletecruit_2.jpg",
             "/assets/athletecruit_3.png",
-            "/assets/athletecruit_4.png"
+            "/assets/athletecruit_4.png",
+            "/assets/athletecruit_5.png"
         ],
         "address": "/athletecruit"
     },

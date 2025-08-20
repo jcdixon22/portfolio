@@ -68,7 +68,7 @@ function HomePage() {
                     </div>
                     <div className='home-intro'>
                         <h1 className='home-title'>
-                            Justice is a <span className='text-highlight'>product manager</span>, <span className='text-highlight'>founder</span>, <span className='text-highlight'>model</span>, and <span className='text-highlight'>athlete</span> in San Francisco.
+                            Justice is a <span className='text-highlight'>founder</span>, <span className='text-highlight'>model</span>, and <span className='text-highlight'>athlete</span> in San Francisco.
                         </h1>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ function HomePage() {
                 <div className='home-content'>
                     <div className='home-bio'>
                         <p className='text-body'>
-                            Previously, he was a <span className='text-highlight'>Robotics Engineer and Consultant</span> at <span className='text-highlight'>PA Consulting</span>, and a <span className='text-highlight'>Medical Device Engineer</span> at <span className='text-highlight'>Terumo</span> and <span className='text-highlight'>Johnson & Johnson</span>.
+                            Previously, he was a <span className='text-highlight'>Product Manager</span> at <span className='text-highlight'>iRhythm</span>, a <span className='text-highlight'>Robotics Engineer and Consultant</span> at <span className='text-highlight'>PA Consulting</span>, and a <span className='text-highlight'>Medical Device Engineer</span> at <span className='text-highlight'>Terumo</span> and <span className='text-highlight'>Johnson & Johnson</span>.
                         </p>
                         <p className='text-body'>
                             He studied <span className='text-highlight'>Mechanical & Aerospace Engineering</span> at <span className='text-highlight'>Princeton University</span>, and went to <span className='text-highlight'>Business School</span> at the <span className='text-highlight'>University of Virginia</span>.
