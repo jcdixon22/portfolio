@@ -47,5 +47,8 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.19.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
