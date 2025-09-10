@@ -1841,30 +1841,30 @@ a:active {
   transition: ease-in-out 300ms;
 }
 .navElement:hover {
-  color: var(--secondaryCol);
+  color: var(--primaryCol);
 }
 .navButton {
   background-color: transparent !important;
-  color: var(--secondaryCol) !important;
+  color: var(--primaryCol) !important;
   border-radius: 30px !important;
-  border: .1rem solid var(--secondaryCol) !important;
+  border: .1rem solid var(--primaryCol) !important;
   padding-left: 1rem !important;
   padding-right: 1rem!important;
   font-size: 1rem !important;
   /* font-weight: bold !important; */
   font-family: var(--fontPrimary) !important;
   /* Transition Stuff */
-  box-shadow: inset 0 0 0 0 var(--secondaryCol);
+  box-shadow: inset 0 0 0 0 var(--primaryCol);
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
 .navButton:hover {
-  background-color: var(--secondaryCol) !important;
+  background-color: var(--primaryCol) !important;
   color: var(--primaryCol) !important;
   border: 5px solid white;
   /* Transition Stuff */
-  box-shadow: inset 400px 0 0 0 var(--secondaryCol);
+  box-shadow: inset 400px 0 0 0 var(--primaryCol);
   transition: ease-out 0.5s;
 }
 
@@ -1880,7 +1880,7 @@ a:active {
 }
 
 .navSocialIcon:hover {
-  color: var(--secondaryCol);
+  color: var(--primaryCol);
   transform: scale(1.1);
 }
 
