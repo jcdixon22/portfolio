@@ -84,7 +84,7 @@ function ProjectPage() {
                 <div className='entry-content'>
                     <div className='entry-main'>
                         <section className='entry-section'>
-                            <h2 className='entry-section-title'>Objectives</h2>
+                            <h2 className='entry-section-title'>What happened</h2>
                             <div className='entry-objectives'>
                                 {objectives.map((objective, index) => (
                                     <div 
@@ -99,7 +99,7 @@ function ProjectPage() {
                         </section>
 
                         <section className='entry-section'>
-                            <h2 className='entry-section-title'>Skills</h2>
+                            <h2 className='entry-section-title'>How it happened</h2>
                             <div className='entry-skills'>
                                 {skills.map((skill, index) => (
                                     <span 

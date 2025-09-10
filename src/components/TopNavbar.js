@@ -2,6 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React, { useEffect, useState} from 'react';
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 
 
 function TopNavbar() {
@@ -47,8 +49,15 @@ function TopNavbar() {
                   Sports
                 </div>
               </Nav.Link>
-              <Nav.Link href="/contact">
-                <Button className='navButton'>Get in Touch</Button>
+              <Nav.Link href="https://linkedin.com/in/justicedixon" target="_blank" rel="noopener noreferrer">
+                <div className='navSocialIcon'>
+                  <CiLinkedin />
+                </div>
+              </Nav.Link>
+              <Nav.Link href="https://instagram.com/justicedixon1" target="_blank" rel="noopener noreferrer">
+                <div className='navSocialIcon'>
+                  <FaInstagram />
+                </div>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

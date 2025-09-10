@@ -86,36 +86,42 @@ function TravelPage() {
                                     }
                                 </Geographies>
 
-                                {locations.map((location) => (
-                                    <Marker 
-                                        key={location.id} 
-                                        coordinates={location.coordinates}
-                                        onClick={() => handleLocationClick(location)}
-                                    >
-                                        <g
-                                            transform="translate(-12, -24)"
-                                            className="travel-marker-container"
+                                {locations.map((location) => {
+                                    // Calculate pin size based on zoom level (inverted - smaller when zoomed in)
+                                    const baseSize = 20;
+                                    const minSize = 8;
+                                    const maxSize = 32;
+                                    const pinSize = Math.max(minSize, Math.min(maxSize, baseSize / mapPosition.zoom));
+                                    
+                                    return (
+                                        <Marker 
+                                            key={location.id} 
+                                            coordinates={location.coordinates}
+                                            onClick={() => handleLocationClick(location)}
                                         >
-                                            <MdLocationPin 
-                                                className={`travel-marker ${selectedLocation === location.id ? 'active' : ''}`}
-                                                size={24}
-                                            />
-                                            {selectedLocation === location.id && (
+                                            <g
+                                                transform={`translate(-${pinSize/2}, -${pinSize})`}
+                                                className="travel-marker-container"
+                                            >
+                                                <MdLocationPin 
+                                                    className={`travel-marker ${selectedLocation === location.id ? 'active' : ''}`}
+                                                    size={pinSize}
+                                                />
                                                 <text 
                                                     textAnchor="middle"
                                                     y={-10}
+                                                    className={`travel-tooltip ${selectedLocation === location.id ? 'visible' : ''}`}
                                                     style={{ 
-                                                        fontFamily: "var(--fontPrimary)",
-                                                        fontSize: "min(14px, 2.5vw)",
+                                                        fontSize: `${Math.max(8, Math.min(14, 12 / mapPosition.zoom))}px`,
                                                         fill: "var(--textCol1)"
                                                     }}
                                                 >
                                                     {location.location}
                                                 </text>
-                                            )}
-                                        </g>
-                                    </Marker>
-                                ))}
+                                            </g>
+                                        </Marker>
+                                    );
+                                })}
                             </ZoomableGroup>
                         </ComposableMap>
                         <button className="travel-reset-button" onClick={handleMapReset}>

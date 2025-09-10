@@ -161,6 +161,9 @@ function AthleticsPage() {
     }, [visibleReels, activeTab]);
 
     const handleTabChange = (tab) => {
+        // Prevent clicking on the active tab
+        if (tab === activeTab) return;
+        
         setActiveTab(tab);
         setReelIndex(0);
         if (tab === 'lifting') {

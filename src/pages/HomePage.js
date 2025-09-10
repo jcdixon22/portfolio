@@ -1,35 +1,41 @@
-import { Button } from 'react-bootstrap';
-import { LuCodeXml } from 'react-icons/lu';
-import { IoTrophyOutline } from 'react-icons/io5';
-import { IoCameraOutline } from 'react-icons/io5';
+import { IoIosPin } from 'react-icons/io';
+import { FaRobot, FaHandsHelping, FaMicrochip, FaStethoscope, FaHeartbeat, FaIndustry, FaBullhorn, FaPenFancy, FaUserTie, FaCogs } from 'react-icons/fa';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import deadliftImage from '../media/deadlift.jpg';
+import fitnessImage from '../model_images/fitness_1.jpg';
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  ZoomableGroup,
+  Marker
+} from "react-simple-maps";
+import { MdLocationPin } from 'react-icons/md';
 import PageWrapper from '../components/PageWrapper';
-
-import data from "../general_data.json"
+import travelData from '../travel_data.json';
 
 function HomePage() {
-    const [imageLoaded, setImageLoaded] = useState(false);
     const [isEntering, setIsEntering] = useState(true);
     const [isExiting, setIsExiting] = useState(false);
+    const [hoveredLocation, setHoveredLocation] = useState(null);
+    const [mapZoom, setMapZoom] = useState(1.6);
     const navigate = useNavigate();
     const contentRef = useRef(null);
+    
+    // Process travel data for the map
+    const locations = Object.keys(travelData).map(key => ({
+        id: key,
+        ...travelData[key],
+        coordinates: [parseFloat(travelData[key].longitude), parseFloat(travelData[key].latitude)]
+    }));
+    
+    // Count cities by type
+    const liveCount = locations.filter(loc => loc.type === 'live').length;
+    const visitCount = locations.filter(loc => loc.type === 'visit').length;
 
     useEffect(() => {
         setIsEntering(true);
-    }, []);
-
-    useEffect(() => {
-        const img = new Image();
-        img.src = data.Home_Page.headshot;
-        img.onload = () => {
-            console.log('Image loaded');
-            setImageLoaded(true);
-        };
-        img.onerror = () => {
-            console.error('Error loading image');
-            setImageLoaded(true);
-        };
     }, []);
 
     const handleButtonClick = (path) => {
@@ -51,53 +57,181 @@ function HomePage() {
         }, 500);
     };
 
+    const explorationAreas = [
+        { icon: FaRobot, text: 'Robotics' },
+        { icon: FaHandsHelping, text: 'Non-profits' },
+        { icon: FaMicrochip, text: 'Electronics' },
+        { icon: FaStethoscope, text: 'Medical Devices' },
+        { icon: FaHeartbeat, text: 'Health Tech' },
+        { icon: FaIndustry, text: 'Manufacturing' },
+        { icon: FaBullhorn, text: 'Marketing' },
+        { icon: FaPenFancy, text: 'Content Creation' },
+        { icon: FaUserTie, text: 'Consulting' },
+        { icon: FaCogs, text: 'Product Management' }
+    ];
+
     return(
         <PageWrapper isHomePage={true}>
             <div className={`home-format ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
                 <div className='home-hero'>
-                    <div className='home-image-container'>
-                        {!imageLoaded ? (
-                            <div className='home-loading' />
-                        ) : (
-                            <img 
-                                className="home-picture" 
-                                src={data.Home_Page.headshot} 
-                                alt="Justice Dixon"
-                            />
-                        )}
+                    <h1 className='home-header'>Justice Dixon</h1>
+                    <p className='home-current-work'>
+                        Right now, I'm building an AI construction startup in
+                    </p>
+                    <div className='home-location-line'>
+                        <img src="/assets/sf.png" alt="San Francisco" className='home-sf-logo' />
+                        <div className='home-location-text-group'>
+                            <IoIosPin className='home-location-icon' />
+                            <span>San Francisco</span>
+                        </div>
                     </div>
-                    <div className='home-intro'>
-                        <h1 className='home-title'>
-                            Justice is a <span className='text-highlight'>founder</span>, <span className='text-highlight'>model</span>, and <span className='text-highlight'>athlete</span> in San Francisco.
-                        </h1>
+                    <p className='home-current-work'>
+                        Check out what else I've been up to:
+                    </p>
+                    
+                    <div className='home-cards-container'>
+                        <div className='home-card' onClick={() => handleButtonClick('/engineering')}>
+                            <img src="/assets/athletecruit_3.png" alt="Engineering" className='home-card-image' />
+                            <div className='home-card-content'>
+                                Engineering
+                            </div>
+                        </div>
+                        <div className='home-card' onClick={() => handleButtonClick('/sports')}>
+                            <img src={deadliftImage} alt="Sports" className='home-card-image' />
+                            <div className='home-card-content'>
+                                Sports
+                            </div>
+                        </div>
+                        <div className='home-card' onClick={() => handleButtonClick('/modeling')}>
+                            <img src={fitnessImage} alt="Modeling" className='home-card-image' />
+                            <div className='home-card-content'>
+                                Modeling
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div className='home-content'>
-                    <div className='home-bio'>
-                        <p className='text-body'>
-                            Previously, he was a <span className='text-highlight'>Product Manager</span> at <span className='text-highlight'>iRhythm</span>, a <span className='text-highlight'>Robotics Engineer and Consultant</span> at <span className='text-highlight'>PA Consulting</span>, and a <span className='text-highlight'>Medical Device Engineer</span> at <span className='text-highlight'>Terumo</span> and <span className='text-highlight'>Johnson & Johnson</span>.
+
+                <div className='home-section'>
+                    <h2 className='section-header'>Before that,</h2>
+                    <p className='text-body'>
+                        I explored a ton of different spaces
+                    </p>
+                    <div className='exploration-grid'>
+                        {explorationAreas.map((area, index) => {
+                            const IconComponent = area.icon;
+                            return (
+                                <div key={index} className='exploration-item'>
+                                    <IconComponent className='exploration-icon' />
+                                    <span className='exploration-text'>{area.text}</span>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <div className='home-section'>
+                    <h2 className='section-header'>and before that,</h2>
+                    <div className='education-section'>
+                        <p className='education-text'>
+                            I studied Mechanical Engineering at 
+                            <img src="/assets/princeton.png" alt="Princeton" className='education-logo' />
+                            <span className='text-orange'><strong>Princeton</strong></span> and Business at 
+                            <img src="/assets/uva.png" alt="University of Virginia" className='education-logo' />
+                            <span className='text-orange'><strong>Virginia</strong></span>.
                         </p>
-                        <p className='text-body'>
-                            He studied <span className='text-highlight'>Mechanical & Aerospace Engineering</span> at <span className='text-highlight'>Princeton University</span>, and went to <span className='text-highlight'>Business School</span> at the <span className='text-highlight'>University of Virginia</span>.
+                        
+                        <div className='education-projects-row'>
+                            <div className='education-projects-text'>
+                                <p className='education-text'>
+                                    I built in a ton of <a href="/engineering" className='text-highlight'><strong>passion projects</strong></a> while in college.
+                                </p>
+                            </div>
+                            <div className='education-projects-image'>
+                                <img src="/assets/arm_1.png" alt="Engineering project" className='education-projects-img' />
+                            </div>
+                        </div>
+                        
+                        <div className='education-athletics-row'>
+                            <div className='education-athletics-text'>
+                                <p className='education-text'>
+                                    I also was a <a href="/sports" className='text-highlight'><strong>Division 1 sprinter</strong></a> at both schools.
+                                </p>
+                            </div>
+                            <div className='education-athletics-image'>
+                                <img src="/assets/princetonrun.jpg" alt="Princeton running" className='education-athletics-img' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='home-section'>
+                    <h2 className='section-header'>and along the way,</h2>
+                    <div className='travel-stats'>
+                        <p className='travel-stats-text'>
+                            I've lived in <span className='travel-number travel-number-primary'>{liveCount}</span> different cities, and visited over <span className='travel-number travel-number-secondary'>{visitCount}</span> more.
                         </p>
                     </div>
                     
-                    <div className='home-cta'>
-                        <div className='home-buttons-container'>
-                            <Button className='home-button' onClick={() => handleButtonClick('/engineering')}>
-                                <LuCodeXml />
-                                Engineering
-                            </Button>
-                            <Button className='home-button' onClick={() => handleButtonClick('/sports')}>
-                                <IoTrophyOutline />
-                                Sports
-                            </Button>
-                            <Button className='home-button' onClick={() => handleButtonClick('/modeling')}>
-                                <IoCameraOutline />
-                                Modeling
-                            </Button>
-                        </div>
+                    <div className='home-travel-map-container'>
+                        <ComposableMap 
+                            projection="geoMercator" 
+                            className="home-travel-map"
+                            style={{ backgroundColor: 'var(--backgroundCol)' }}
+                        >
+                            <ZoomableGroup 
+                                center={[0, 30]} 
+                                zoom={1.6}
+                                onMoveEnd={({ zoom }) => setMapZoom(zoom)}
+                            >
+                                <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                                    {({ geographies }) =>
+                                        geographies.map((geo) => (
+                                            <Geography 
+                                                key={geo.rsmKey} 
+                                                geography={geo} 
+                                                className="home-travel-world-map"
+                                            />
+                                        ))
+                                    }
+                                </Geographies>
+
+                                {locations.map((location) => {
+                                    // Calculate pin size based on zoom level (inverted - smaller when zoomed in)
+                                    const baseSize = 24;
+                                    const minSize = 10;
+                                    const maxSize = 36;
+                                    const pinSize = Math.max(minSize, Math.min(maxSize, baseSize / mapZoom));
+                                    
+                                    return (
+                                        <Marker 
+                                            key={location.id} 
+                                            coordinates={location.coordinates}
+                                        >
+                                            <g 
+                                                transform={`translate(-${pinSize/2}, -${pinSize})`}
+                                                onMouseEnter={() => setHoveredLocation(location)}
+                                                onMouseLeave={() => setHoveredLocation(null)}
+                                            >
+                                                <MdLocationPin 
+                                                    className={`home-travel-marker ${location.type === 'live' ? 'home-travel-marker-live' : 'home-travel-marker-visit'}`}
+                                                    size={pinSize}
+                                                />
+                                                <text 
+                                                    textAnchor="middle"
+                                                    y={-10}
+                                                    className={`home-travel-tooltip ${hoveredLocation && hoveredLocation.id === location.id ? 'visible' : ''}`}
+                                                    style={{
+                                                        fontSize: `${Math.max(8, Math.min(12, 12 / mapZoom))}px`
+                                                    }}
+                                                >
+                                                    {location.location}
+                                                </text>
+                                            </g>
+                                        </Marker>
+                                    );
+                                })}
+                            </ZoomableGroup>
+                        </ComposableMap>
                     </div>
                 </div>
             </div>

@@ -3,228 +3,308 @@
       "location": "Shanghai, China",
       "latitude": "31.224361",
       "longitude": "121.469170",
+      "type": "live",
       "images": []
     },
     "cairns": {
       "location": "Cairns, QLD, Australia",
       "latitude": "-16.925491",
       "longitude": "145.754120",
+      "type": "visit",
       "images": []
     },
     "gold_coast": {
       "location": "Gold Coast, QLD, Australia",
       "latitude": "-28.016667",
       "longitude": "153.400000",
+      "type": "visit",
       "images": []
     },
     "sydney": {
       "location": "Sydney, NSW, Australia",
       "latitude": "-33.868820",
       "longitude": "151.209290",
+      "type": "visit",
       "images": []
     },
     "k_gari_island": {
-      "location": "K'gari (Fraser Island), QLD, Australia",
+      "location": "K'gari Island, QLD, Australia",
       "latitude": "-25.216667",
       "longitude": "153.133333",
+      "type": "visit",
       "images": []
     },
     "beijing": {
       "location": "Beijing, China",
       "latitude": "39.916668",
       "longitude": "116.383331",
+      "type": "visit",
       "images": []
     },
     "rome": {
       "location": "Rome, Italy",
       "latitude": "41.902782",
       "longitude": "12.496366",
+      "type": "visit",
       "images": []
     },
     "milan": {
       "location": "Milan, Italy",
       "latitude": "45.464203",
       "longitude": "9.189982",
+      "type": "visit",
       "images": []
     },
     "villa_darco": {
       "location": "Villa D'Arco, Italy",
       "latitude": "45.500000",
       "longitude": "9.150000",
+      "type": "live",
       "images": []
     },
     "barcelona": {
       "location": "Barcelona, Spain",
       "latitude": "41.390205",
       "longitude": "2.154007",
+      "type": "visit",
       "images": []
     },
     "madrid": {
       "location": "Madrid, Spain",
       "latitude": "40.416775",
       "longitude": "-3.703790",
+      "type": "visit",
       "images": []
     },
     "valencia": {
       "location": "Valencia, Spain",
       "latitude": "39.469907",
       "longitude": "-0.376288",
+      "type": "visit",
       "images": []
     },
     "bunol": {
       "location": "Buñol, Spain",
       "latitude": "39.416670",
       "longitude": "-0.783330",
+      "type": "visit",
       "images": []
     },
     "london": {
       "location": "London, UK",
       "latitude": "51.509865",
       "longitude": "-0.118092",
+      "type": "visit",
       "images": []
     },
     "dover": {
       "location": "Dover, Kent, UK",
       "latitude": "51.126369",
       "longitude": "1.316198",
+      "type": "visit",
       "images": []
     },
     "san_juan": {
       "location": "San Juan, Puerto Rico",
       "latitude": "18.465539",
       "longitude": "-66.105735",
+      "type": "visit",
       "images": []
     },
     "culebra": {
       "location": "Culebra, Puerto Rico",
       "latitude": "18.316667",
       "longitude": "-65.300000",
+      "type": "visit",
       "images": []
     },
     "san_jose": {
       "location": "San José, Costa Rica",
       "latitude": "9.928069",
       "longitude": "-84.090725",
+      "type": "visit",
       "images": []
     },
     "playa_ballena": {
       "location": "Playa Ballena, Costa Rica",
       "latitude": "9.133333",
       "longitude": "-83.700000",
+      "type": "visit",
       "images": []
     },
     "miami": {
       "location": "Miami, FL, USA",
       "latitude": "25.761680",
       "longitude": "-80.191790",
+      "type": "visit",
       "images": []
     },
     "san_diego": {
       "location": "San Diego, CA, USA",
       "latitude": "32.715736",
       "longitude": "-117.161087",
+      "type": "visit",
       "images": []
     },
     "san_francisco": {
       "location": "San Francisco, CA, USA",
       "latitude": "37.774929",
       "longitude": "-122.419418",
+      "type": "live",
       "images": []
     },
     "seattle": {
       "location": "Seattle, WA, USA",
       "latitude": "47.606209",
       "longitude": "-122.332069",
+      "type": "visit",
       "images": []
     },
     "toronto": {
       "location": "Toronto, ON, Canada",
       "latitude": "43.651070",
       "longitude": "-79.347015",
+      "type": "visit",
       "images": []
     },
     "montreal": {
       "location": "Montreal, QC, Canada",
       "latitude": "45.501690",
       "longitude": "-73.567253",
+      "type": "visit",
       "images": []
     },
     "new_york": {
       "location": "New York, NY, USA",
       "latitude": "40.712776",
       "longitude": "-74.005974",
+      "type": "visit",
       "images": []
     },
     "princeton": {
       "location": "Princeton, NJ, USA",
       "latitude": "40.357297",
       "longitude": "-74.667222",
+      "type": "live",
       "images": []
     },
     "las_vegas": {
       "location": "Las Vegas, NV, USA",
       "latitude": "36.169941",
       "longitude": "-115.139832",
+      "type": "visit",
       "images": []
     },
     "costa_mesa": {
       "location": "Costa Mesa, CA, USA",
       "latitude": "33.641132",
       "longitude": "-117.918671",
+      "type": "live",
       "images": []
     },
     "grand_canyon": {
       "location": "Grand Canyon, AZ, USA",
       "latitude": "36.106965",
       "longitude": "-112.112997",
+      "type": "visit",
       "images": []
     },
     "sequoia": {
-      "location": "Sequoia National Park, CA, USA",
+      "location": "Sequoia, CA, USA",
       "latitude": "36.486366",
       "longitude": "-118.565752",
+      "type": "visit",
       "images": []
     },
     "yosemite": {
-      "location": "Yosemite National Park, CA, USA",
+      "location": "Yosemite, CA, USA",
       "latitude": "37.865101",
       "longitude": "-119.538330",
+      "type": "visit",
       "images": []
     },
     "houston": {
       "location": "Houston, TX, USA",
       "latitude": "29.760427",
       "longitude": "-95.369804",
+      "type": "visit",
       "images": []
     },
     "tampa": {
       "location": "Tampa, FL, USA",
       "latitude": "27.950575",
       "longitude": "-82.457176",
+      "type": "live",
       "images": []
     },
     "charlottesville": {
       "location": "Charlottesville, VA, USA",
       "latitude": "38.029305",
       "longitude": "-78.476677",
+      "type": "live",
       "images": []
     },
     "honolulu": {
       "location": "Honolulu, HI, USA",
       "latitude": "21.306944",
       "longitude": "-157.858337",
+      "type": "visit",
       "images": []
     },
     "steamboat_springs": {
       "location": "Steamboat Springs, CO, USA",
       "latitude": "40.484977",
       "longitude": "-106.831716",
+      "type": "visit",
       "images": []
     },
     "chicago": {
       "location": "Chicago, IL, USA",
       "latitude": "41.878113",
       "longitude": "-87.629799",
+      "type": "visit",
+      "images": []
+    },
+    "fairfax": {
+      "location": "Fairfax, VA, USA",
+      "latitude": "38.846220",
+      "longitude": "-77.306370",
+      "type": "live",
+      "images": []
+    },
+    "fort_walton_beach": {
+      "location": "Fort Walton Beach, FL, USA",
+      "latitude": "30.420200",
+      "longitude": "-86.616730",
+      "type": "live",
+      "images": []
+    },
+    "jacksonville": {
+      "location": "Jacksonville, FL, USA",
+      "latitude": "30.332180",
+      "longitude": "-81.655650",
+      "type": "live",
+      "images": []
+    },
+    "montgomery": {
+      "location": "Montgomery, AL, USA",
+      "latitude": "32.366810",
+      "longitude": "-86.299970",
+      "type": "live",
+      "images": []
+    },
+    "pittsburgh": {
+      "location": "Pittsburgh, PA, USA",
+      "latitude": "40.440620",
+      "longitude": "-79.995890",
+      "type": "live",
+      "images": []
+    },
+    "waycross": {
+      "location": "Waycross, GA, USA",
+      "latitude": "31.213860",
+      "longitude": "-82.354910",
+      "type": "live",
       "images": []
     }
   }
