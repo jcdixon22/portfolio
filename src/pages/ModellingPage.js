@@ -76,7 +76,7 @@ function ModellingPage() {
     return (
         <PageWrapper>
             <div className={`model-format ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
-                <a href="https://www.raeagency.com/men/justice-dixon" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.raeagency.com/development/men/2820267/justice-dixon" target="_blank" rel="noopener noreferrer">
                     <button className="agency-portfolio-button">
                         View agency portfolio
                     </button>

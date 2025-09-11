@@ -143,7 +143,7 @@ function HomePage() {
                         <div className='education-projects-row'>
                             <div className='education-projects-text'>
                                 <p className='education-text'>
-                                    I built in a ton of <a href="/engineering" className='text-highlight'><strong>passion projects</strong></a> while in college.
+                                    I built a ton of <a href="/engineering" className='text-highlight'><strong>passion projects</strong></a> while in college.
                                 </p>
                             </div>
                             <div className='education-projects-image'>

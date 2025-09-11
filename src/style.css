@@ -581,7 +581,7 @@ a:active {
 }
 
 .home-sf-logo {
-  height: min(300px, 50vw);
+  height: min(200px, 35vw);
   width: auto;
   vertical-align: middle;
 }
@@ -855,7 +855,8 @@ a:active {
   .home-location-line {
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: -1rem;
+    margin-top: -2.5rem;
+    margin-bottom: -0.5rem;
   }
   
   .home-sf-logo {
