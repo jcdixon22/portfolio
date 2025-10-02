@@ -168,7 +168,7 @@ function HomePage() {
                     <h2 className='section-header'>and along the way,</h2>
                     <div className='travel-stats'>
                         <p className='travel-stats-text'>
-                            I've lived in <span className='travel-number travel-number-primary'>{liveCount}</span> different cities, and visited over <span className='travel-number travel-number-secondary'>{visitCount}</span> more.
+                            I've <span className='travel-number travel-number-primary'>lived in {liveCount} different cities</span>, and <span className='travel-number travel-number-secondary'>visited over {visitCount} others</span>.
                         </p>
                     </div>
                     
