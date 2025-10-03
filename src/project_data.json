@@ -21,9 +21,10 @@
         "end_date": "Ongoing",
         "company": "Personal Project",
         "objectives": [
-            "Check it out here: www.athletecruit.com",
+            "Build the product in a few weeks, then got 300 users just from posting on Reddit.",
             "An AI college recruiting advisor which helps families maximize the recruiting options of high school athletes",
-            "The advisor determines which school types the student has a good chance of being recruited to, and then scans live roster performance data to find gaps that the student can fill"
+            "The agent analyzes the student's academic and athletic profile, scrapes hundreds of school rosters to find gaps that the student can fill",
+            "www.athletecruit.com"
         ],
         "cover_image": "/assets/athletecruit_1.png",
         "images": [
@@ -42,6 +43,7 @@
         "end_date": "Ongoing",
         "company": "Personal Project",
         "objectives": [
+            "Recruited 12 elite atheletes and coaches to join the platform",
             "Connecting you with athletes and coaches for quick and personalized fitness advice.",
             "Athletes get paid to share their expertise, and fans get unprecidented access to world-class insights."
         ],
