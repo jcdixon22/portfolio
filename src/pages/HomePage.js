@@ -1,5 +1,5 @@
 import { IoIosPin } from 'react-icons/io';
-import { FaRobot, FaHandsHelping, FaMicrochip, FaStethoscope, FaHeartbeat, FaIndustry, FaBullhorn, FaPenFancy, FaUserTie, FaCogs } from 'react-icons/fa';
+import { FaRobot, FaHandsHelping, FaMicrochip, FaStethoscope, FaHeartbeat, FaIndustry, FaBullhorn, FaPenFancy, FaUserTie, FaCogs, FaCode } from 'react-icons/fa';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import deadliftImage from '../media/deadlift.jpg';
@@ -58,6 +58,7 @@ function HomePage() {
     };
 
     const explorationAreas = [
+        { icon: FaCode, text: 'Full-stack' },
         { icon: FaRobot, text: 'Robotics' },
         { icon: FaHandsHelping, text: 'Non-profits' },
         { icon: FaMicrochip, text: 'Electronics' },
@@ -143,11 +144,11 @@ function HomePage() {
                         <div className='education-projects-row'>
                             <div className='education-projects-text'>
                                 <p className='education-text'>
-                                    I built a ton of <a href="/engineering" className='text-highlight'><strong>passion projects</strong></a> while in college.
+                                    I built a ton of <a href="/engineering" className='text-highlight'><strong>neat stuff</strong></a> in college.
                                 </p>
                             </div>
                             <div className='education-projects-image'>
-                                <img src="/assets/arm_1.png" alt="Engineering project" className='education-projects-img' />
+                                <img src="/assets/infield_1.png" alt="Engineering project" className='education-projects-img' />
                             </div>
                         </div>
                         
