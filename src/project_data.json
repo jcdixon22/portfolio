@@ -1,12 +1,12 @@
 {
     "stealth": {
-        "title": "AI Startup",
-        "skills": ["React", "Node", "Computer Vision", "LLM"],
+        "title": "Fintech Startup",
+        "skills": ["React", "Node", "Blockchain", "Agentic Tools"],
         "start_date": "August 2025",
         "end_date": "Ongoing",
-        "company": "AI Startup",
+        "company": "Fintech Startup",
         "objectives": [
-            "Building something neat"
+            "Building something new in fintech"
         ],
         "cover_image": "/assets/stealth_1.jpg",
         "images": [

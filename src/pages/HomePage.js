@@ -77,7 +77,7 @@ function HomePage() {
                 <div className='home-hero'>
                     <h1 className='home-header'>Justice Dixon</h1>
                     <p className='home-current-work'>
-                        Right now, I'm building an AI startup in
+                        Right now, I'm building an fintech startup in
                     </p>
                     <div className='home-location-line'>
                         <img src="/assets/sf.png" alt="San Francisco" className='home-sf-logo' />
