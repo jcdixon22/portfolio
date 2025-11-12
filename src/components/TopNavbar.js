@@ -1,7 +1,6 @@
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import React, { useEffect, useState} from 'react';
+import React from 'react';
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 

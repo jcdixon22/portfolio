@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EngineeringLoadAnimation from './EngineeringLoadAnimation';
 
-const EngineeringImageSkeleton = ({ src, className}) => {
+const EngineeringImageSkeleton = ({ src, className, alt = ''}) => {
   const [loaded, setLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -15,6 +15,7 @@ const EngineeringImageSkeleton = ({ src, className}) => {
         src={src}
         onLoad={handleImageLoad}
         style={{ display: loaded ? 'block' : 'none' }}
+        alt={alt}
       />
     </div>
   );

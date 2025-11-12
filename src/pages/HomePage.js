@@ -43,11 +43,7 @@ function HomePage() {
         
         setIsExiting(true);
         const content = contentRef.current;
-        
-        // Force a reflow by getting the computed style
-        const computedStyle = window.getComputedStyle(content);
-        const opacity = computedStyle.opacity;
-        
+
         // Add the exit animation class
         content.classList.add('home-content-exit');
         

@@ -1,5 +1,3 @@
-import Row from 'react-bootstrap/Row';
-import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
 import PageWrapper from '../components/PageWrapper';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -72,10 +70,6 @@ function EngineeringPage() {
         
         setIsExiting(true);
         const content = contentRef.current;
-        
-        // Force a reflow by getting the computed style
-        const computedStyle = window.getComputedStyle(content);
-        const opacity = computedStyle.opacity;
         
         // Add the exit animation class
         content.classList.add('home-content-exit');

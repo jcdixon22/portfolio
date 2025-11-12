@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './style.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage.js'
 import EngineeringPage from './pages/EngineeringPage.js'
 import ProjectPage from './pages/ProjectPage.js'
-import PortfolioPage from './pages/PortfolioPage.js';
 import ContactPage from './pages/ContactPage.js';
 import AthleticsPage from './pages/AthleticsPage.js';
 import TravelPage from './pages/TravelPage.js';

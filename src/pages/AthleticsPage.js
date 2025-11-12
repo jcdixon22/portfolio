@@ -3,7 +3,6 @@ import { Button } from 'react-bootstrap';
 import { FaDumbbell, FaRunning } from 'react-icons/fa';
 import EngineeringImageSkeleton from '../components/EngineeringImageSkeleton';
 import PageWrapper from '../components/PageWrapper';
-import { useNavigate } from 'react-router-dom';
 
 // Import images
 import deadliftImage from '../media/deadlift.jpg';
@@ -20,10 +19,8 @@ function AthleticsPage() {
     const [activeTab, setActiveTab] = useState('lifting');
     const [reelIndex, setReelIndex] = useState(0);
     const [isEntering, setIsEntering] = useState(true);
-    const [isExiting, setIsExiting] = useState(false);
     const [reelsLoading, setReelsLoading] = useState(true);
     const [isMobile, setIsMobile] = useState(false);
-    const navigate = useNavigate();
     const contentRef = useRef(null);
 
     const liftingReels = [
@@ -189,25 +186,6 @@ function AthleticsPage() {
         }, 1000);
     };
 
-    const handleBackClick = () => {
-        if (isExiting) return;
-        
-        setIsExiting(true);
-        const content = contentRef.current;
-        
-        // Force a reflow by getting the computed style
-        const computedStyle = window.getComputedStyle(content);
-        const opacity = computedStyle.opacity;
-        
-        // Add the exit animation class
-        content.classList.add('home-content-exit');
-        
-        // Wait for the animation to complete before navigating
-        setTimeout(() => {
-            navigate('/');
-        }, 500);
-    };
-
     return (
         <PageWrapper>
             <div className={`athletics-container ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
@@ -264,6 +242,7 @@ function AthleticsPage() {
                                 <EngineeringImageSkeleton 
                                     src={deadliftImage} 
                                     className="athletics-image" 
+                                    alt="Deadlift competition"
                                 />
                             </div>
                         </div>
@@ -358,6 +337,7 @@ function AthleticsPage() {
                                 <EngineeringImageSkeleton 
                                     src={princetonRunImage} 
                                     className="athletics-image" 
+                                    alt="Princeton track sprint"
                                 />
                             </div>
                         </div>
@@ -379,6 +359,7 @@ function AthleticsPage() {
                                         <EngineeringImageSkeleton 
                                             src={image} 
                                             className="athletics-track-image" 
+                                            alt={`Track meet ${index + 1}`}
                                         />
                                     </div>
                                 ))}

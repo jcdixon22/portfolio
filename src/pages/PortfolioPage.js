@@ -46,7 +46,11 @@ function PortfolioPage() {
             <hr className='project-line mx-auto'></hr>
             <Row className='project-image-row mx-auto'>
               {images.map((image, index) => (
-                    <ProjectImageSkeleton className="project-image" key={index} src={image}/>
+                    <ProjectImageSkeleton
+                        key={index}
+                        src={image}
+                        alt={`${title} gallery ${index + 1}`}
+                    />
                 ))}
             </Row>
         </div>
