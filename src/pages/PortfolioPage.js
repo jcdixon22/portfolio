@@ -1,9 +1,6 @@
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 
-import data from "../general_data.json"
 import projectData from '../project_data.json'
 import ProjectImageSkeleton from '../components/ProjectImageSkeleton';
 

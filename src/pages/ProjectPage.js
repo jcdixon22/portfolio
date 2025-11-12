@@ -67,14 +67,18 @@ function ProjectPage() {
                         <h1 className='entry-title'>{title}</h1>
                         <div className='entry-meta'>
                             <span className='entry-company'>{company}</span>
-                            {/* <span className='entry-dates'>{start_date} — {end_date}</span> */}
+                            {(start_date || end_date) && (
+                                <span className='entry-dates'>
+                                    {start_date && end_date ? `${start_date} — ${end_date}` : start_date || end_date}
+                                </span>
+                            )}
                         </div>
                     </div>
                     <div className='entry-hero-image'>
                         {images[0] && (
                             <img 
                                 src={getImageUrl(images[0])} 
-                                alt={`${title} - Hero Image`}
+                                alt={`${title} hero`}
                                 loading="eager"
                             />
                         )}
@@ -121,7 +125,7 @@ function ProjectPage() {
                             >
                                 <img 
                                     src={getImageUrl(image)} 
-                                    alt={`${title} - Image ${index + 2}`}
+                                    alt={`${title} gallery ${index + 2}`}
                                     loading="lazy"
                                 />
                             </div>

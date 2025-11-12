@@ -1,23 +1,14 @@
-import modelData from '../model_data.json'
 import { Row } from 'react-bootstrap';
-import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import PageWrapper from '../components/PageWrapper';
 
 import newport from '../model_images/newport.jpg';
 import nyc from '../model_images/nyc.jpg';
-import palo_alto_1 from '../model_images/palo_alto_1.jpg';
-import palo_alto_2 from '../model_images/palo_alto_2.jpg';
 import palo_alto_3 from '../model_images/palo_alto_3.jpg';
-import palo_alto_4 from '../model_images/palo_alto_4.jpg';
-import palo_alto_5 from '../model_images/palo_alto_5.jpg';
-import palo_alto_6 from '../model_images/palo_alto_6.jpg';
 import sutro_1 from '../model_images/sutro_1.jpg';
 import sutro_2 from '../model_images/sutro_2.jpg';
 import sutro_3 from '../model_images/sutro_3.jpg';
 import tel_aviv from '../model_images/tel_aviv.jpg';
-import spain from '../model_images/spain.png';
-import running from '../model_images/running_1.png';
 import surfing from '../model_images/surfing.png';
 import new_palo from '../model_images/new_palo.jpg';
 import fitness_1 from '../model_images/fitness_1.jpg';
@@ -28,9 +19,6 @@ import fitness_3 from '../model_images/fitness_3.jpg';
 function ModellingPage() {
     const [imagesLoaded, setImagesLoaded] = useState({});
     const [isEntering, setIsEntering] = useState(true);
-    const [isExiting, setIsExiting] = useState(false);
-    const navigate = useNavigate();
-    const contentRef = useRef(null);
 
     useEffect(() => {
         setIsEntering(true);
@@ -38,25 +26,6 @@ function ModellingPage() {
 
     const handleImageLoad = (id) => {
         setImagesLoaded(prev => ({...prev, [id]: true}));
-    };
-
-    const handleBackClick = () => {
-        if (isExiting) return;
-        
-        setIsExiting(true);
-        const content = contentRef.current;
-        
-        // Force a reflow by getting the computed style
-        const computedStyle = window.getComputedStyle(content);
-        const opacity = computedStyle.opacity;
-        
-        // Add the exit animation class
-        content.classList.add('home-content-exit');
-        
-        // Wait for the animation to complete before navigating
-        setTimeout(() => {
-            navigate('/');
-        }, 500);
     };
 
     const modelImages = [
@@ -69,13 +38,14 @@ function ModellingPage() {
         { id: 'newport', src: newport },
         { id: 'sutro_1', src: sutro_1 },
         { id: 'sutro_2', src: sutro_2 },
+        { id: 'sutro_3', src: sutro_3 },
         { id: 'fitness_3', src: fitness_3 },
         { id: 'tel_aviv', src: tel_aviv }
     ];
 
     return (
         <PageWrapper>
-            <div className={`model-format ${isEntering ? 'home-content-enter' : ''}`} ref={contentRef}>
+            <div className={`model-format ${isEntering ? 'home-content-enter' : ''}`}>
                 <a href="https://www.raeagency.com/development/men/2820267/justice-dixon" target="_blank" rel="noopener noreferrer">
                     <button className="agency-portfolio-button">
                         View agency portfolio
